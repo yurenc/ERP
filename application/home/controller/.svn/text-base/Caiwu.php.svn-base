@@ -1,0 +1,35 @@
+<?php
+namespace app\home\controller;
+
+use app\home\controller\Common;
+
+class Caiwu extends Common
+{
+    /*
+    **财务管理-预留首页
+     */
+    public function index(){
+
+        $this->assign([
+            'nav'           =>  config('menu.caiwu'),
+            'controller'    =>request()->controller(),
+            'action'        =>  request()->action(),
+        ]);
+        return $this->fetch('index');
+    }
+
+    /*
+    **应收账目查询
+    */
+    public function yingshou(){
+        return $this->fetch('yingshou');
+    }
+
+    /*
+    **应收账目查询
+    */
+    public function yingfu(){
+        return $this->fetch('yingfu');
+    }
+
+}

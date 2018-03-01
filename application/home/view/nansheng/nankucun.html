@@ -1,0 +1,172 @@
+
+<style type="text/css">
+    .layui-table-cell{padding:0 3px;text-align:center;}
+    .laytable-cell-checkbox{padding:0 15px;}
+    .layui-elem-quote{padding:10px 0;margin-bottom:0;border-left: 1px solid #e2e2e2;border-top: 1px solid #e2e2e2;border-right: 1px solid #e2e2e2;border-radius:4px;}
+    .layui-table-view{margin:0;}
+/*     .layui-table[lay-even] tr:nth-child(even):hover,.layui-table tbody tr:hover,.layui-table-hover{background-color:#FFB800;} */
+</style>
+<blockquote class="layui-elem-quote">
+<div class="layui-row">
+  <div class="layui-col-md4" style="padding-left:50px;">
+    <div class="layui-btn-group">
+      <button class="layui-btn layui-btn-normal layui-btn-sm" onclick="changeKucun()"><i class="layui-icon">&#xe640;</i>修改库存</button>
+    </div>
+  </div>
+  <div class="layui-col-md5" id="search1" style="clear:none;margin:0;">
+      <div class="layui-input-inline" style="width:auto;">
+        <select name="k1" id="search_select" style="height:38px;padding:0 3px;float: left;">
+          <option value="type">型号</option>
+        </select>
+      </div>
+      <div class="layui-input-inline" style="">
+        <input type="text" class="layui-input" name="v1" placeholder="Search for...">
+      </div>
+      <button class="layui-btn layui-btn-primary" type="button" onclick="dosearch()"><i class="layui-icon">&#xe615;</i> 搜索</button>
+  </div>
+  <div class="layui-col-md3">
+    <div class="layui-form layui-input-inline" id="category">
+      <input type="radio" name="category" value="床垫" title="床垫" checked lay-filter="dcategory">
+      <input type="radio" name="category" value="软体沙发" title="软体沙发" lay-filter="dcategory">
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+layui.use('form', function(){
+  var form = layui.form;
+  form.on('radio(dcategory)', function(data){
+    var category = data.value
+    layui.use('table', function(){
+        var table = layui.table;
+        table.reload('orderTable', {
+          url: '{:url(\'Goods/getKucun\')}'
+          ,where: {'category':category}
+          ,height:'full-130'
+          ,done: function(res, curr, count){
+            //console.log(res);
+          }
+        });
+    });
+  });
+});
+function dosearch(){
+    var category = $("#category input[name='category']:checked").val();
+    var k1 = $("#search_select").val();
+    var v1 = $("#search1 input[name='v1']").val();
+    var search = {}
+    if(v1.length!=0){
+      search.k1=k1;
+      search.v1=v1;
+    }
+    // console.log(search);
+    if(!jQuery.isEmptyObject(search)){
+      layui.use('table', function(){
+          var table = layui.table;
+          table.reload('orderTable', {
+            url: '{:url(\'Goods/getKucun\')}'
+            ,where: {'search':search,'category':category}
+            ,height:'full-130'
+            ,done: function(res, curr, count){
+              //console.log(res);
+            }
+          });
+      });
+    }else{
+      layer.msg("亲！你得告诉我你要什么！");
+    }
+}
+</script>
+
+</blockquote>
+<table class="layui-table" lay-data="{
+    height:'full-130',
+    url:'{:url(\'Goods/getKucun\')}',
+    method:'post',
+    page:true,
+    size: 'sm',
+    even: true,
+    id:'orderTable'
+}" lay-filter="test" id="orderTable">
+  <thead>
+    <tr>
+        <th lay-data="{checkbox:true}"></th>
+        <th lay-data="{field:'goodsn', width:90 ,templet: '#goodsn'}">产品编号</th>
+        <th lay-data="{field:'leibie', width:90}">类别</th>
+        <th lay-data="{field:'type', width:90}">型号</th>
+        <th lay-data="{field:'brand', width:90}">品牌</th>
+        <th lay-data="{field:'parma', width:90}">布号/方向</th>
+        <th lay-data="{field:'size', width:90}">规格</th>
+        <th lay-data="{field:'sudf', width:90}">区域</th>
+        <th lay-data="{field:'jianshu', width:90}">件数</th>
+        <th lay-data="{field:'nannum', width:90}">库存数</th>
+        <th lay-data="{field:'note', width:200}">备注</th>
+    </tr>
+  </thead>
+</table>
+<script type="text/html" id="goodsn">
+{{ d.id}}-{{d.attr_id}}
+</script>
+<script>
+    layui.use('table', function(){
+        var table = layui.table;
+    });
+
+function changeKucun(){
+  layui.use('table', function(){
+    var table = layui.table;
+    var checkStatus = table.checkStatus('orderTable');
+    if(checkStatus.data.length==1){
+      var yuandata = checkStatus.data[0];
+      var text = '<div class="layui-form-item" style="margin-top:20px;"><label class="layui-form-label">现有库存数</label><div class="layui-input-block"><input type="text" name="changenum" lay-verify="number" autocomplete="off" placeholder="请输入修正后的库存数量" class="layui-input"></div></div><div class="layui-form-item"><div class="layui-input-block"><button class="layui-btn" onclick="changeSub('+yuandata.attr_id+','+yuandata.sunum+')" id="chaiSub" cishu="0">立即提交</button></div></div>'
+      layer.open({
+        type: 1
+        ,title :'修改库存'
+        ,offset: "auto"
+        ,area: ['550px', '250px']
+        ,tipsMore: true
+        ,content: '<div style="width:500px;margin:0 auto;" id="changeMsg">'+text+'</div>'
+        ,btn: '关闭全部'
+        ,btnAlign: 'c' //按钮居中
+        ,shade: 0.8//不显示遮罩
+        ,yes: function(){
+          layer.closeAll();
+          table.reload('orderTable',{});
+        }
+      });
+    }else{
+      layer.msg("有且只能选择一条数据进行编辑");
+    }
+  });
+}
+function changeSub(id,number){
+  var changenum = $("#changeMsg input[name='changenum']").val();
+  var cishu = $("#changeMsg #chaiSub").attr('cishu');
+  if(cishu!=0){
+    layer.msg("请勿重复提交");
+    return false;
+  }
+  var reg = /^[1-9]\d*$/
+  if (!reg.test(changenum)) {
+    layer.msg("请填入整数！");
+    return false;
+  }
+  $.ajax({
+    url: "{:url('Goods/editKucun')}",
+    type: 'POST',
+    data: {'attr_id':id,'changenum':changenum,'ck':'nannum'},
+    success:function(res){
+        layer.msg(res.msg, {time: 2000},function(){});
+        $("#changeMsg #chaiSub").attr('cishu','1');
+        // console.log(res);
+    }
+  })
+}
+</script>
+
+
+
+
+
+
+
+

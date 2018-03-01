@@ -1,0 +1,48 @@
+<script type="text/javascript" src="/static/jqplot/jQuery.js"></script>
+<script type="text/javascript" src="/static/jqplot/jqplot.js"></script>
+<style type="text/css">
+.site-doc-color{width:100%;}
+.site-doc-color li {display: inline-block; vertical-align: middle; width: 21%; margin:20px 1.8%; padding:40px 0;color: #fff; text-align: center; border-radius: 5px; line-height: 22px; font-size: 16px;font-weight:bold; cursor:pointer;box-shadow: 3px 3px 5px #888888;}
+</style>
+<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;">
+    <legend>
+    快捷导航
+    <a href="http://sc.ymnl1998.com/static/YMNL ERP help document.doc" class="layui-btn layui-btn-warm">帮助文档</a>
+    </legend>
+    <ul class="site-doc-color">
+      <li style="background-color: #009688;" onclick="jumpUrl('{:url(\'Sumao/order\')}')">
+        <p>苏州贸易部订单统计</p>
+      </li>
+      <li style="background-color: #5FB878;" onclick="jumpUrl('{:url(\'nansheng/yworder\')}')">
+        <p>南通生产部业务接单</p>
+      </li>
+      <li style="background-color: #393D49;" onclick="jumpUrl('{:url(\'caigou/cgorder\')}')">
+        <p>采购管理</p>
+      </li>
+      <li style="background-color: #1E9FFF;" onclick="jumpUrl('{:url(\'user/kehu\')}')">
+        <p>客户统计</p>
+      </li>
+    </ul>
+</fieldset>
+<script type="text/javascript">
+function jumpUrl(url){
+   window.location.href = url;
+}
+</script>
+
+<!-- <fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;padding:20px 0;">
+    <legend>年度订单统计</legend>
+    <div id="chart2"></div>
+</fieldset>
+
+<script type="text/javascript">
+    var data = [[1,2,3,4,5,6,7,8,9,10,11,12],[3,6,8,1,11,22,4,21,6,4,19,2]];
+    var data_max = 30; //Y轴最大刻度
+    var line_title = ["床垫","沙发"]; //曲线名称
+    var y_label = "订单数"; //Y轴标题
+    var x_label = "月份"; //X轴标题
+    var x = [1,2,3,4,5,6,7,8,9,10,11,12]; //定义X轴刻度值
+    var title = "2017年全年订单月度统计"; //统计图标标题
+    // j.jqplot.diagram.base("chart1", data, line_title, "这是统计标题", x, x_label, y_label, data_max, 1);
+    j.jqplot.diagram.base("chart2", data, line_title, title, x, x_label, y_label, data_max, 2);
+</script> -->

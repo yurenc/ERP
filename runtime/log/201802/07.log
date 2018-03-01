@@ -1,0 +1,1681 @@
+---------------------------------------------------------------
+[ 2018-02-07T10:29:26+08:00 ] 127.0.0.1 116.62.209.27 GET /
+[ info ] test.ymnl1998.com/ [运行时间：0.004335s][吞吐率：230.67req/s] [内存消耗：517.39kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com:80',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:26+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/index.html
+[ info ] test.ymnl1998.com/home/login/index.html [运行时间：0.004311s][吞吐率：231.96req/s] [内存消耗：544.66kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com:80',
+  'cookie' => 'PHPSESSID=8sr4u6hgeludjhq77ac0u20b14',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->index[ /www/web/erp/public_html/application/home/controller/Login.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/login/index.html [ array (
+  0 => 'err',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:26+08:00 ] 127.0.0.1 116.62.209.27 GET /explicit_not_exist_path
+[ info ] test.ymnl1998.com/explicit_not_exist_path [运行时间：0.005514s][吞吐率：181.36req/s] [内存消耗：394.24kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'explicit_not_exist_path',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/explicit_not_exist_path',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:26+08:00 ] 127.0.0.1 116.62.209.27 GET /index.html
+[ info ] test.ymnl1998.com/index.html [运行时间：0.003802s][吞吐率：263.03req/s] [内存消耗：390.08kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/index.html',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:26+08:00 ] 127.0.0.1 116.62.209.27 GET /index.php
+[ info ] test.ymnl1998.com/index.php [运行时间：0.003663s][吞吐率：273.00req/s] [内存消耗：517.48kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/index.php',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:26+08:00 ] 127.0.0.1 116.62.209.27 GET /index.php/home/login/index.html
+[ info ] test.ymnl1998.com/index.php/home/login/index.html [运行时间：0.004627s][吞吐率：216.12req/s] [内存消耗：544.78kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/index.php',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->index[ /www/web/erp/public_html/application/home/controller/Login.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/login/index.html [ array (
+  0 => 'err',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:26+08:00 ] 127.0.0.1 116.62.209.27 GET /index.jsp
+[ info ] test.ymnl1998.com/index.jsp [运行时间：0.003931s][吞吐率：254.39req/s] [内存消耗：390.47kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index.jsp',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/index.jsp',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:26+08:00 ] 127.0.0.1 116.62.209.27 GET /admin/
+[ info ] test.ymnl1998.com/admin/ [运行时间：0.003394s][吞吐率：294.65req/s] [内存消耗：390.45kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/admin/',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:26+08:00 ] 127.0.0.1 116.62.209.27 GET /wp-login.php
+[ info ] test.ymnl1998.com/wp-login.php [运行时间：0.003938s][吞吐率：253.94req/s] [内存消耗：390.55kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-login.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/wp-login.php',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:26+08:00 ] 127.0.0.1 116.62.209.27 GET /readme.html
+[ info ] test.ymnl1998.com/readme.html [运行时间：0.003341s][吞吐率：299.32req/s] [内存消耗：390.48kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'readme',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/readme.html',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /license.txt
+[ info ] test.ymnl1998.com/license.txt [运行时间：0.003365s][吞吐率：297.19req/s] [内存消耗：390.49kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'license.txt',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/license.txt',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /wp-includes/js/wplink.js
+[ info ] test.ymnl1998.com/wp-includes/js/wplink.js [运行时间：0.003443s][吞吐率：290.44req/s] [内存消耗：390.72kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-includes',
+    1 => 'js',
+    2 => 'wplink.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/wp-includes/js/wplink.js',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /wp-admin/js/customize-controls.js
+[ info ] test.ymnl1998.com/wp-admin/js/customize-controls.js [运行时间：0.003457s][吞吐率：289.28req/s] [内存消耗：390.77kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-admin',
+    1 => 'js',
+    2 => 'customize-controls.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/wp-admin/js/customize-controls.js',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /wp-admin/js/nav-menu.js
+[ info ] test.ymnl1998.com/wp-admin/js/nav-menu.js [运行时间：0.003410s][吞吐率：293.27req/s] [内存消耗：390.69kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-admin',
+    1 => 'js',
+    2 => 'nav-menu.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/wp-admin/js/nav-menu.js',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /wp-includes/js/plupload/handlers.js
+[ info ] test.ymnl1998.com/wp-includes/js/plupload/handlers.js [运行时间：0.004218s][吞吐率：237.07req/s] [内存消耗：390.75kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-includes',
+    1 => 'js',
+    2 => 'plupload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/wp-includes/js/plupload/handlers.js',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /wp-includes/js/tinymce/wp-tinymce.js.gz
+[ info ] test.ymnl1998.com/wp-includes/js/tinymce/wp-tinymce.js.gz [运行时间：0.003403s][吞吐率：293.86req/s] [内存消耗：390.83kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-includes',
+    1 => 'js',
+    2 => 'tinymce',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/wp-includes/js/tinymce/wp-tinymce.js.gz',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /data/captcha/captcha_bg1.gif
+[ info ] test.ymnl1998.com/data/captcha/captcha_bg1.gif [运行时间：0.003768s][吞吐率：265.40req/s] [内存消耗：390.77kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'captcha',
+    2 => 'captcha_bg1.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/data/captcha/captcha_bg1.gif',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /data/images/bcastr.swf
+[ info ] test.ymnl1998.com/data/images/bcastr.swf [运行时间：0.003275s][吞吐率：305.35req/s] [内存消耗：390.69kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'images',
+    2 => 'bcastr.swf',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/data/images/bcastr.swf',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /admin/images/no.gif
+[ info ] test.ymnl1998.com/admin/images/no.gif [运行时间：0.003575s][吞吐率：279.71req/s] [内存消耗：390.63kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'images',
+    2 => 'no.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/admin/images/no.gif',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /images/no_picture.gif
+[ info ] test.ymnl1998.com/images/no_picture.gif [运行时间：0.003406s][吞吐率：293.60req/s] [内存消耗：390.65kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'no_picture.gif',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/images/no_picture.gif',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /images/close.gif
+[ info ] test.ymnl1998.com/images/close.gif [运行时间：0.003395s][吞吐率：294.54req/s] [内存消耗：390.61kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'close.gif',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/images/close.gif',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /themes/default/images/display_mode_grid.gif
+[ info ] test.ymnl1998.com/themes/default/images/display_mode_grid.gif [运行时间：0.003324s][吞吐率：300.84req/s] [内存消耗：390.84kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'themes',
+    1 => 'default',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/themes/default/images/display_mode_grid.gif',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /js/region.js
+[ info ] test.ymnl1998.com/js/region.js [运行时间：0.003352s][吞吐率：298.34req/s] [内存消耗：390.56kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'region.js',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/js/region.js',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /4e5e5d7364f443e28fbf0d3ae744a59a
+[ info ] test.ymnl1998.com/4e5e5d7364f443e28fbf0d3ae744a59a [运行时间：0.003708s][吞吐率：269.68req/s] [内存消耗：390.77kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '4e5e5d7364f443e28fbf0d3ae744a59a',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/4e5e5d7364f443e28fbf0d3ae744a59a',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /?c=4e5e5d7364f443e28fbf0d3ae744a59a
+[ info ] test.ymnl1998.com/?c=4e5e5d7364f443e28fbf0d3ae744a59a [运行时间：0.003638s][吞吐率：274.87req/s] [内存消耗：518.39kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/?c=4e5e5d7364f443e28fbf0d3ae744a59a',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'c' => '4e5e5d7364f443e28fbf0d3ae744a59a',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/index.html
+[ info ] test.ymnl1998.com/home/login/index.html [运行时间：0.004348s][吞吐率：229.99req/s] [内存消耗：544.78kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/?c=4e5e5d7364f443e28fbf0d3ae744a59a',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->index[ /www/web/erp/public_html/application/home/controller/Login.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/login/index.html [ array (
+  0 => 'err',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /index.php/explicit_not_exist_path
+[ info ] test.ymnl1998.com/index.php/explicit_not_exist_path [运行时间：0.003475s][吞吐率：287.77req/s] [内存消耗：390.70kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'explicit_not_exist_path',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/index.php/explicit_not_exist_path',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /README
+[ info ] test.ymnl1998.com/README [运行时间：0.003514s][吞吐率：284.57req/s] [内存消耗：390.46kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'README',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/README',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/robots.txt
+[ info ] test.ymnl1998.com/home/login/robots.txt [运行时间：0.004813s][吞吐率：207.77req/s] [内存消耗：485.91kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'robots.txt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/robots.txt',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/favicon.ico
+[ info ] test.ymnl1998.com/home/login/favicon.ico [运行时间：0.004047s][吞吐率：247.09req/s] [内存消耗：485.91kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/favicon.ico',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/explicit_not_exist_path
+[ info ] test.ymnl1998.com/home/login/explicit_not_exist_path [运行时间：0.004094s][吞吐率：244.27req/s] [内存消耗：486.04kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'explicit_not_exist_path',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/explicit_not_exist_path',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/wp-login.php
+[ info ] test.ymnl1998.com/home/login/wp-login.php [运行时间：0.004098s][吞吐率：244.03req/s] [内存消耗：485.91kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'wp-login.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/wp-login.php',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/readme.html
+[ info ] test.ymnl1998.com/home/login/readme.html [运行时间：0.004571s][吞吐率：218.77req/s] [内存消耗：485.90kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'readme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/readme.html',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/license.txt
+[ info ] test.ymnl1998.com/home/login/license.txt [运行时间：0.004255s][吞吐率：235.01req/s] [内存消耗：485.91kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'license.txt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/license.txt',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/wp-includes/js/wplink.js
+[ info ] test.ymnl1998.com/home/login/wp-includes/js/wplink.js [运行时间：0.004121s][吞吐率：242.66req/s] [内存消耗：486.65kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'wp-includes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/wp-includes/js/wplink.js',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'wplink.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/wp-admin/js/customize-controls.js
+[ info ] test.ymnl1998.com/home/login/wp-admin/js/customize-controls.js [运行时间：0.004352s][吞吐率：229.79req/s] [内存消耗：486.70kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'wp-admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/wp-admin/js/customize-controls.js',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'customize-controls.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/wp-admin/js/nav-menu.js
+[ info ] test.ymnl1998.com/home/login/wp-admin/js/nav-menu.js [运行时间：0.004267s][吞吐率：234.36req/s] [内存消耗：486.64kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'wp-admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/wp-admin/js/nav-menu.js',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'nav-menu.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/wp-includes/js/plupload/handlers.js
+[ info ] test.ymnl1998.com/home/login/wp-includes/js/plupload/handlers.js [运行时间：0.004711s][吞吐率：212.26req/s] [内存消耗：486.70kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'wp-includes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/wp-includes/js/plupload/handlers.js',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'plupload',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:27+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/wp-includes/js/tinymce/wp-tinymce.js.gz
+[ info ] test.ymnl1998.com/home/login/wp-includes/js/tinymce/wp-tinymce.js.gz [运行时间：0.004452s][吞吐率：224.62req/s] [内存消耗：486.76kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'wp-includes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/wp-includes/js/tinymce/wp-tinymce.js.gz',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'tinymce',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/data/captcha/captcha_bg1.gif
+[ info ] test.ymnl1998.com/home/login/data/captcha/captcha_bg1.gif [运行时间：0.004627s][吞吐率：216.12req/s] [内存消耗：486.66kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'data',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/data/captcha/captcha_bg1.gif',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'captcha' => 'captcha_bg1.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/data/images/bcastr.swf
+[ info ] test.ymnl1998.com/home/login/data/images/bcastr.swf [运行时间：0.004085s][吞吐率：244.79req/s] [内存消耗：486.63kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'data',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/data/images/bcastr.swf',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'images' => 'bcastr.swf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/admin/images/no.gif
+[ info ] test.ymnl1998.com/home/login/admin/images/no.gif [运行时间：0.004407s][吞吐率：226.90req/s] [内存消耗：486.59kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/admin/images/no.gif',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'images' => 'no.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/images/no_picture.gif
+[ info ] test.ymnl1998.com/home/login/images/no_picture.gif [运行时间：0.004202s][吞吐率：237.99req/s] [内存消耗：485.98kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/images/no_picture.gif',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/images/close.gif
+[ info ] test.ymnl1998.com/home/login/images/close.gif [运行时间：0.004122s][吞吐率：242.60req/s] [内存消耗：485.89kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/images/close.gif',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/themes/default/images/display_mode_grid.gif
+[ info ] test.ymnl1998.com/home/login/themes/default/images/display_mode_grid.gif [运行时间：0.004062s][吞吐率：246.19req/s] [内存消耗：486.76kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'themes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/themes/default/images/display_mode_grid.gif',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'default' => 'images',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/js/region.js
+[ info ] test.ymnl1998.com/home/login/js/region.js [运行时间：0.004092s][吞吐率：244.38req/s] [内存消耗：485.89kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/js/region.js',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/static/.gitignore
+[ info ] test.ymnl1998.com/home/login/static/.gitignore [运行时间：0.004071s][吞吐率：245.64req/s] [内存消耗：485.94kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'static',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/static/.gitignore',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/4e5e5d7364f443e28fbf0d3ae744a59a
+[ info ] test.ymnl1998.com/home/login/4e5e5d7364f443e28fbf0d3ae744a59a [运行时间：0.004341s][吞吐率：230.37req/s] [内存消耗：486.16kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => '4e5e5d7364f443e28fbf0d3ae744a59a',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/4e5e5d7364f443e28fbf0d3ae744a59a',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/index.html?c=4e5e5d7364f443e28fbf0d3ae744a59a
+[ info ] test.ymnl1998.com/home/login/index.html?c=4e5e5d7364f443e28fbf0d3ae744a59a [运行时间：0.004267s][吞吐率：234.36req/s] [内存消耗：545.62kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/index.html?c=4e5e5d7364f443e28fbf0d3ae744a59a',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'c' => '4e5e5d7364f443e28fbf0d3ae744a59a',
+)
+[ info ] [ RUN ] app\home\controller\Login->index[ /www/web/erp/public_html/application/home/controller/Login.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/login/index.html [ array (
+  0 => 'err',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/index.php/explicit_not_exist_path
+[ info ] test.ymnl1998.com/home/login/index.php/explicit_not_exist_path [运行时间：0.004041s][吞吐率：247.47req/s] [内存消耗：486.04kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/index.php/explicit_not_exist_path',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /home/login/README
+[ info ] test.ymnl1998.com/home/login/README [运行时间：0.004086s][吞吐率：244.74req/s] [内存消耗：485.84kb] [文件加载：49]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'README',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/README',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /wcm/
+[ info ] test.ymnl1998.com/wcm/ [运行时间：0.004096s][吞吐率：244.14req/s] [内存消耗：390.46kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wcm',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/wcm/',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /phpMyAdmin/
+[ info ] test.ymnl1998.com/phpMyAdmin/ [运行时间：0.003689s][吞吐率：271.07req/s] [内存消耗：390.52kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phpMyAdmin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/phpMyAdmin/',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /phpmyadmin/
+[ info ] test.ymnl1998.com/phpmyadmin/ [运行时间：0.003230s][吞吐率：309.61req/s] [内存消耗：390.52kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phpmyadmin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/phpmyadmin/',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /pma/
+[ info ] test.ymnl1998.com/pma/ [运行时间：0.003285s][吞吐率：304.42req/s] [内存消耗：390.46kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pma',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/pma/',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T10:29:28+08:00 ] 127.0.0.1 116.62.209.27 GET /solr/
+[ info ] test.ymnl1998.com/solr/ [运行时间：0.003288s][吞吐率：304.13req/s] [内存消耗：390.46kb] [文件加载：40]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'solr',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/solr/',
+  'cookie' => 'PHPSESSID=tlbuvdjhdc9h9nvrl1lhckr1i1',
+  'x-real-ip' => '116.62.209.27',
+  'x-forwarded-for' => '116.62.209.27',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T19:58:10+08:00 ] 127.0.0.1 121.239.199.250 GET /
+[ info ] test.ymnl1998.com/ [运行时间：0.004333s][吞吐率：230.79req/s] [内存消耗：517.41kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'x-real-ip' => '121.239.199.250',
+  'x-forwarded-for' => '121.239.199.250',
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T19:58:11+08:00 ] 127.0.0.1 121.239.199.250 GET /home/login/index.html
+[ info ] test.ymnl1998.com/home/login/index.html [运行时间：0.004739s][吞吐率：211.01req/s] [内存消耗：544.70kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'cookie' => 'PHPSESSID=2ktopco12fi8ckrimmphn4q5d0',
+  'x-real-ip' => '121.239.199.250',
+  'x-forwarded-for' => '121.239.199.250',
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->index[ /www/web/erp/public_html/application/home/controller/Login.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/login/index.html [ array (
+  0 => 'err',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T19:59:10+08:00 ] 127.0.0.1 101.226.33.237 GET /
+[ info ] test.ymnl1998.com/ [运行时间：0.003919s][吞吐率：255.16req/s] [内存消耗：516.83kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'x-real-ip' => '101.226.33.237',
+  'x-forwarded-for' => '101.226.33.237',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-07T19:59:11+08:00 ] 127.0.0.1 101.226.33.224 GET /home/login/index.html
+[ info ] test.ymnl1998.com/home/login/index.html [运行时间：0.005103s][吞吐率：195.97req/s] [内存消耗：543.56kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'x-real-ip' => '101.226.33.224',
+  'x-forwarded-for' => '101.226.33.224',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->index[ /www/web/erp/public_html/application/home/controller/Login.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/login/index.html [ array (
+  0 => 'err',
+) ]
+[ info ] [ LOG ] INIT File

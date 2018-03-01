@@ -1,0 +1,146 @@
+<style type="text/css">
+    .box{width:90%;margin:0 auto;padding:20px;margin-bottom:50px;border:1px solid #e2e2e2;}
+</style>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  <legend>物料采购申请</legend>
+</fieldset>
+<div class="box">
+<form class="layui-form" action="" method="post">
+    <!-- 以下是栅格行 -->
+    <div class="layui-row layui-col-space5">
+      <div class="layui-col-md4">
+        <!-- 以下是表单 -->
+        <div class="layui-form-item">
+          <label class="layui-form-label">品名</label>
+          <div class="layui-input-block">
+            <input type="text" name="pinming" required  lay-verify="required" placeholder="请输入品名" autocomplete="on" class="layui-input" id="Ipt_usercode">
+          </div>
+        </div>
+        <!-- 以上是表单 -->
+      </div>
+      <div class="layui-col-md4">
+        <!-- 以下是表单 -->
+        <div class="layui-form-item">
+          <label class="layui-form-label">类别</label>
+          <div class="layui-input-block">
+            <input type="text" name="leibie" required  lay-verify="required" placeholder="请输入类别" autocomplete="on" class="layui-input">
+          </div>
+        </div>
+        <!-- 以上是表单 -->
+      </div>
+      <div class="layui-col-md4">
+        <!-- 以下是表单 -->
+        <div class="layui-form-item">
+          <label class="layui-form-label">型号</label>
+          <div class="layui-input-block">
+            <input type="text" name="type" required  lay-verify="required" placeholder="请输入型号" autocomplete="on" class="layui-input">
+          </div>
+        </div>
+        <!-- 以上是表单 -->
+      </div>
+    </div>
+    <!-- 以上是栅格行 -->
+    <!-- 以下是栅格行 -->
+    <div class="layui-row layui-col-space5">
+      <div class="layui-col-md4">
+      <!-- 以下是表单 -->
+      <div class="layui-form-item">
+        <label class="layui-form-label">规格</label>
+        <div class="layui-input-block">
+          <input type="text" name="size" required  lay-verify="required" placeholder="请输入规格" autocomplete="on" class="layui-input">
+        </div>
+      </div>
+      <!-- 以上是表单 -->
+      </div>
+      <div class="layui-col-md4">
+      <!-- 以下是表单 -->
+      <div class="layui-form-item">
+        <label class="layui-form-label">单位</label>
+        <div class="layui-input-block">
+          <input type="text" name="danwei" required  lay-verify="required" placeholder="请输入单位" autocomplete="on" class="layui-input">
+        </div>
+      </div>
+      <!-- 以上是表单 -->
+      </div>
+      <div class="layui-col-md4">
+      <!-- 以下是表单 -->
+      <div class="layui-form-item">
+        <label class="layui-form-label">数量</label>
+        <div class="layui-input-block">
+          <input type="text" name="number" required  lay-verify="required" placeholder="请输入数量" autocomplete="on" class="layui-input">
+        </div>
+      </div>
+      <!-- 以上是表单 -->
+      </div>
+    </div>
+    <!-- 以上是栅格行 -->
+
+    <!-- 以下是栅格行 -->
+    <div class="layui-row layui-col-space5">
+      <div class="layui-col-md4">
+        <!-- 以下是表单 -->
+        <div class="layui-form-item">
+          <label class="layui-form-label">送货日期</label>
+          <div class="layui-input-block">
+            <input type="text" name="shtime" required  lay-verify="required" placeholder="请输入要求送货日期" autocomplete="off" class="layui-input" id="shrq">
+          </div>
+        </div>
+        <!-- 以上是表单 -->
+      </div>
+      <div class="layui-col-md4">
+        <!-- 以下是表单 -->
+        <!-- 以上是表单 -->
+      </div>
+      <div class="layui-col-md4">
+        <!-- 以下是表单 -->
+        <!-- 以上是表单 -->
+      </div>
+    </div>
+    <!-- 以上是栅格行 -->
+
+  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">备注</label>
+    <div class="layui-input-block">
+      <textarea name="note" placeholder="请输入备注的内容" class="layui-textarea"></textarea>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+      <button type="reset" id="formReset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<script>
+layui.use('form', function(){
+  var form = layui.form;
+
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    // layer.msg(JSON.stringify(data.field));
+    // console.log(data.field);
+    $.ajax({
+      url: "{:url('Caigou/addOrder')}",
+      type: 'POST',
+      data: data.field,
+      success:function(res){
+          layer.msg(res.msg, {time: 2000},function(){});
+          $("#formReset").click();
+          // console.log(res);
+      }
+    })
+    return false;
+  });
+});
+
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  laydate.render({
+    elem: '#shrq' //指定元素
+  });
+});
+
+</script>
+

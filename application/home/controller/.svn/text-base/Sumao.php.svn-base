@@ -1,0 +1,747 @@
+<?php
+namespace app\home\controller;
+
+use app\home\controller\Common;
+use think\Db;
+use think\Request;
+use think\Session;
+
+class Sumao extends Common
+{
+    /*
+    **业务部管理-业务接单
+     */
+    public function jiedan(){
+        valiPerm(Session::get('perm'),1);//访问权限验证
+        $this->assign([
+            'nav'           =>  config('menu.sumao'),
+            'controller'    =>request()->controller(),
+            'action'        =>  request()->action(),
+        ]);
+        return $this->fetch('jiedan');
+    }
+
+    /*
+    *业务部管理-苏州接单-获取用户信息
+     */
+    public function getKehuInfo(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $d = Db::name('kehu')->where([$data['k']=>$data['v']])->find();
+            $respond = empty($d)?['empty'=>1]:$d;
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **业务部管理-苏州接单-添加数据
+     */
+    public function addOrder(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            // 循环添加订单数据
+            for ($i=0; $i < count($data['gid']); $i++) {
+               Db::name('order')->insert([
+                    'usercode' => $data['usercode'],
+                    'username' => $data['username'],
+                    'yqshtime' => $data['yqshtime'],
+                    'shaddress' => $data['shaddress'],
+                    'payment' => $data['payment'],
+                    'note' => $data['note'],
+                    'goods_sn' => $data['gid'][$i].'-'.$data['sizeParma'][$i],
+                    'category' => $data['category'][$i],
+                    'leibie' => $data['leibie'][$i],
+                    'brand' => $data['brand'][$i],
+                    'type' => $data['type'][$i],
+                    'size' => $data['size'][$i],
+                    'parma' => $data['parma'][$i],
+                    'number' => $data['number'][$i],
+                    'price' => $data['price'][$i],
+                    'xiadantime' => date("Y-m-d H:i:s",time()),
+                    'duifang' => $data['duifang'][$i],
+               ]);
+            }
+            $respond['msg'] = "新增数据成功！";
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **业务部管理-订单统计
+     */
+    public function order(){
+        valiPerm(Session::get('perm'),2);//访问权限验证
+        $map = array();
+        $this->assign([
+            'nav'           =>  config('menu.sumao'),
+            'controller'    =>request()->controller(),
+            'action'        =>  request()->action(),
+        ]);
+        return $this->fetch('order');
+    }
+
+    /*
+    **业务部管理-订单统计-查询数据
+     */
+    public function getOrder(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $map = array();
+            // 搜索
+            if(isset($data['search'])){
+                if(!empty($data['search']['v1'])){
+                    $map[$data['search']['k1']] = $data['search']['v1'];
+                }
+                if(isset($data['search']['k2'])){
+                    $map['xiadantime'] = ['between time',[$data['search']['vds'],$data['search']['vde']]];
+                }
+            }
+            //筛选类别
+            $map['category'] = isset($data['category'])?$data['category']:'床垫';
+            //筛选回收站
+            $map['isdelete'] = isset($data['isdelete'])?$data['isdelete']:0;
+            //筛选客户未签收状态
+            $map['fhstatus'] = ['neq',3];
+            //筛选备货未完成
+            $map['bhstatus'] = ['neq',2];
+            $map['bhdi'] = ['neq',2];//苏州备货
+
+            $d = Db::name('order')->page($data['page'],$data['limit'])->where($map)->order('id desc')->select();
+            $respond = [
+                'code'  =>  0,
+                'msg'   =>  "success",
+                'count' =>  Db::name('order')->where($map)->count('id'),
+                'data'  =>  $d,
+            ];
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **业务部管理-订单统计-查询库存
+     */
+    public function getKucun(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $goods_sn = explode("-",$data['goods_sn']);
+            $kucun = Db::table('erp_goods_attr')->where(['attr_id'=>$goods_sn[1]])->value('sunum');
+            $respond['kucun'] = $kucun;
+        }else{
+            $this->error('非法请求');
+        }
+        return $respond;
+    }
+
+    /*
+    **业务部管理-订单统计-更新数据
+     */
+    public function editOrder(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            Db::table('erp_order')->where('id',$data['id'])->update($data);
+            $respond['msg'] = "更新数据成功！";
+            return $respond;
+        }else{
+            $this->error('非法请求a');
+        }
+    }
+
+    /*
+    **业务部管理-订单统计-删除数据
+     */
+    public function delOrder(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            Db::table('erp_order')->where('id',$data['id'])->update(array('isdelete'=>1));
+            $respond['msg'] = "删除数据成功！";
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **业务部管理-订单统计-添加要货单
+     */
+    public function addYaohuo(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            //添加要货订单
+            $yhdata = [
+                'title'     =>  '苏州要货单',
+                'category'  =>    $data['shuju'][0]['category'],
+                'addtime'   =>  date("Y-m-d H:i:s",time()),
+                'admin'     =>  Session::get('uname')
+            ];
+            Db::name('order_yh')->insert($yhdata);
+            $yhId = Db::name('order_yh')->getLastInsID();
+            //循环更改要货状态和要货ID
+            foreach ($data['shuju'] as $key => $val) {
+                Db::table('erp_order')->where('id',$val['id'])->update(array('yhstatus'=>1,'yhid'=>$yhId));
+            }
+            $respond['msg'] = "恭喜成功添加要货单！";
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **业务部管理-订单统计-添加发货单
+     */
+    public function addFahuo(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            if($data['fahuodi']==1){
+                $title='以马内利发货单';
+            }else{
+                $title="以马内利发货单（南通代发）";
+            }
+            //添加要货订单
+            $fhdata = [
+                'title'     =>  $title,
+                'category'  =>    $data['shuju'][0]['category'],
+                'addtime'   =>  date("Y-m-d H:i:s",time()),
+                'admin'     =>  Session::get('uname'),
+                'uid'     =>  $data['userInfo']['uid'],
+                'uname'     =>  $data['userInfo']['uname'],
+                'wuliu'     =>  $data['userInfo']['wuliu'],
+                'mobile'     =>  $data['userInfo']['mobile'],
+                'payment'     =>  $data['userInfo']['payment'],
+                'fahuodi'     =>  $data['fahuodi'],
+                'total'     => $data['total']
+            ];
+            Db::name('order_fh')->insert($fhdata);
+            $fhId = Db::name('order_fh')->getLastInsID();
+            //循环更改要货状态和要货ID
+            foreach ($data['shuju'] as $key => $val) {
+                Db::table('erp_order')->where('id',$val['id'])->update(array('fhstatus'=>1,'fhid'=>$fhId));
+            }
+            $respond['msg'] = "恭喜成功添加发货单！";
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **业务部管理-订单统计-获取客户信息
+     */
+    public function getUserInfo(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $map['id'] = $data['usercode'];
+            $d = Db::name('kehu')->where($map)->find();
+            return $d;
+        }else{
+           $this->error('非法请求');
+        }
+    }
+
+/*
+    **业务部管理-所有订单
+     */
+    public function allorder(){
+        valiPerm(Session::get('perm'),19);//访问权限验证
+        $map = array();
+        $this->assign([
+            'nav'           =>  config('menu.sumao'),
+            'controller'    =>request()->controller(),
+            'action'        =>  request()->action(),
+        ]);
+        return $this->fetch('allorder');
+    }
+
+    /*
+    **业务部管理-所有订单-查询数据
+     */
+    public function getAllOrder(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $map = array();
+            // 搜索
+            if(isset($data['search'])){
+                if(!empty($data['search']['v1'])){
+                    $map[$data['search']['k1']] = $data['search']['v1'];
+                }
+                if(!empty($data['search']['vds'])&&!empty($data['search']['vde'])){
+                    $map['xiadantime'] = ['between time',[$data['search']['vds'],$data['search']['vde']]];
+                }
+                if(!empty($data['search']['v3'])){
+                    $map[$data['search']['k3']] = $data['search']['v3'];
+                }
+                if(!empty($data['search']['v4'])){
+                    $map[$data['search']['k4']] = $data['search']['v4'];
+                }
+                if(!empty($data['search']['v5'])){
+                    $map[$data['search']['k5']] = $data['search']['v5'];
+                }
+                if(!empty($data['search']['v6'])){
+                    $map[$data['search']['k6']] = $data['search']['v6'];
+                }
+            }
+            //筛选类别
+            $map['category'] = isset($data['category'])?$data['category']:'床垫';
+            //筛选回收站
+            $map['isdelete'] = isset($data['isdelete'])?$data['isdelete']:0;
+
+            $d = Db::name('order')->page($data['page'],$data['limit'])->where($map)->order('id desc')->select();
+            $respond = [
+                'code'  =>  0,
+                'msg'   =>  "success",
+                'count' =>  Db::name('order')->where($map)->count('id'),
+                'data'  =>  $d,
+                'sss'   =>  $data,
+            ];
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **业务部管理-所有订单-批量添加复制订单
+     */
+    public function addAllOrder(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $data = $data['data'];
+            $d = getCopyData($data);
+            Db::name('order')->insertAll($d);
+            $respond['msg'] = "恭喜，复制新增数据成功！请移驾“订单统计进行修改”";
+        }else{
+            $this->error('非法请求');
+        }
+        return $respond;
+    }
+
+    /*
+    **苏州仓库管理-出入库流水
+     */
+    public function sukurecord(){
+        valiPerm(Session::get('perm'),3);//访问权限验证
+        $this->assign([
+            'nav'           =>  config('menu.sumao'),
+            'controller'    =>request()->controller(),
+            'action'        =>  request()->action(),
+        ]);
+        return $this->fetch('sukurecord');
+    }
+    /*
+    **苏州仓库管理-出入库流水-查询数据
+     */
+    public function getSukuRecord(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $map = array();
+            // 搜索
+            if(isset($data['search'])){
+                if(!empty($data['search']['v1'])){
+                    $map[$data['search']['k1']] = $data['search']['v1'];
+                }
+                if(isset($data['search']['k2'])){
+                    $map[$data['search']['k2']] = ['between time',[$data['search']['vds'],$data['search']['vde']]];
+                }
+            }
+            //筛选分类
+            $map['category'] = isset($data['category'])?$data['category']:'床垫';
+
+            $map['cangku'] = 1;//苏州仓库
+            $d = Db::name('cangku_log')->page($data['page'],$data['limit'])->where($map)->order('id desc')->select();
+            $respond = [
+                'code'  =>  0,
+                'msg'   =>  "success",
+                'count' =>  Db::name('cangku_log')->where($map)->count('id'),
+                'data'  =>  $d,
+            ];
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **苏州仓库管理-库存统计
+     */
+    public function sukucun(){
+        valiPerm(Session::get('perm'),4);//访问权限验证
+        $this->assign([
+            'nav'           =>  config('menu.sumao'),
+            'controller'    =>request()->controller(),
+            'action'        =>  request()->action(),
+        ]);
+        return $this->fetch('sukucun');
+    }
+
+    /*
+    **苏州物流管理-发货管理
+     */
+    public function songhuo(){
+        valiPerm(Session::get('perm'),5);//访问权限验证
+        $this->assign([
+            'nav'           =>  config('menu.sumao'),
+            'controller'    =>request()->controller(),
+            'action'        =>  request()->action(),
+        ]);
+        return $this->fetch('songhuo');
+    }
+
+    /*
+    **苏州物流管理-发货管理-查询数据
+     */
+    public function getFhOrder(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $map = array();
+            // 搜索
+            if(isset($data['search'])){
+                if(!empty($data['search']['v1'])){
+                    $map[$data['search']['k1']] = $data['search']['v1'];
+                }
+                if(isset($data['search']['k2'])){
+                    $map['addtime'] = ['between time',[$data['search']['vds'],$data['search']['vde']]];
+                }
+            }
+            //筛选类别
+            $map['category'] = isset($data['category'])?$data['category']:'床垫';
+            $map['status'] = isset($map['status'])?$map['status']:1;
+            $map['fahuodi'] = 1;
+            $d = Db::name('order_fh')->page($data['page'],$data['limit'])->where($map)->order('fhid desc')->select();
+            $respond = [
+                'code'  =>  0,
+                'msg'   =>  "success",
+                'count' =>  Db::name('order_fh')->where($map)->count('fhid'),
+                'data'  =>  $d,
+            ];
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **苏州物流管理-发货管理-获取收货单详情
+     */
+    public function getFhXiangqing(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $map['fhid'] = $data['fhid'];
+            $d = Db::name('order')->where($map)->select();
+            $respond['data'] = $d;
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **苏州物流管理-发货管理-完成发货单
+     */
+    public function completeFahuo(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            //更新发货状态
+            Db::table('erp_order_fh')->where('fhid',$data['fhid'])->update(array('status'=>2,'fhtime'=>date("Y-m-d H:i:s",time())));
+            //批量更新订单明细装车状态
+            Db::table('erp_order')->where('fhid',$data['fhid'])->setInc('fhstatus');
+            //同时如果仓库有记录，就去库存
+            $d = Db::name('order')->where('fhid',$data['fhid'])->select();
+            foreach ($d as $k => $v) {
+                //检查该产品仓库里是否有库存
+                $c = Db::name('cangku')->where(array('brand'=>$v['brand'],'type'=>$v['type'],'size'=>$v['size'],'parma'=>$v['parma'],'leibie'=>$v['leibie'],'cangku' => 1))->find();
+                if(empty($c)){
+
+                }else{
+                    //有记录就更新库存数
+                    $number = $c['number']-$v['number'];
+                    Db::table('erp_cangku')->where(array('brand'=>$v['brand'],'type'=>$v['type'],'size'=>$v['size'],'parma'=>$v['parma'],'leibie'=>$v['leibie'],'cangku' => 1))->update(array('number'=>$number));
+                    //添加仓库流水记录
+                    $cangku_log = [
+                        'oid'  =>  $v['id'],
+                        'uid'  =>  $v['usercode'],
+                        'category'  =>  $c['category'],
+                        'leibie'  =>  $c['leibie'],
+                        'brand'  =>  $c['brand'],
+                        'type'  =>  $c['type'],
+                        'size'  =>  $c['size'],
+                        'parma'  =>  $c['parma'],
+                        'jianshu'  =>  $c['jianshu'],
+                        'number'  =>  $number,
+                        'duifang'  =>  $c['duifang'],
+                        'cangku'  =>  $c['cangku'],
+                        'change'  =>  0-$v['number'],
+                        'addtime'  =>  date('Y-m-d H:i:s',time()),
+                    ];
+                    Db::name('cangku_log')->insert($cangku_log);
+                }
+            }
+            $respond['msg'] = "订单完成！工作之余要注意休息哟！";
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **苏州物流管理-收货管理
+     */
+    public function shouhuo(){
+        valiPerm(Session::get('perm'),6);//访问权限验证
+        $this->assign([
+            'nav'           =>  config('menu.sumao'),
+            'controller'    =>request()->controller(),
+            'action'        =>  request()->action(),
+        ]);
+        return $this->fetch('shouhuo');
+    }
+
+    /*
+    **苏州物流管理-收货管理-查询数据
+     */
+    public function getShOrder(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $map = array();
+            // 搜索
+            if(isset($data['search'])){
+                if(!empty($data['search']['v1'])){
+                    $map[$data['search']['k1']] = $data['search']['v1'];
+                }
+                if(isset($data['search']['k2'])){
+                    $map['addtime'] = ['between time',[$data['search']['vds'],$data['search']['vde']]];
+                }
+            }
+            //筛选类别
+            $map['category'] = isset($data['category'])?$data['category']:'床垫';
+            $map['status'] = isset($data['status'])?$data['status']:2;
+            $d = Db::name('order_zc')->page($data['page'],$data['limit'])->where($map)->order('zcid desc')->select();
+            $respond = [
+                'code'  =>  0,
+                'msg'   =>  "success",
+                'count' =>  Db::name('order_zc')->where($map)->count('zcid'),
+                'data'  =>  $d,
+            ];
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **苏州物流管理-收货管理-获取收货单详情
+     */
+    public function getShXiangqing(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $map['zcid'] = $data['zcid'];
+            $d = Db::name('order')->where($map)->select();
+            $respond['data'] = $d;
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **苏州物流管理-收货管理-完成收货单
+     */
+    public function completeShouhuo(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            //更新装车状态
+            Db::table('erp_order_zc')->where('zcid',$data['zcid'])->update(array('status'=>3,'completetime'=>date('Y-m-d H:i:s',time())));
+            //批量更新订单明细装车状态和要货状态
+            Db::table('erp_order')->where('zcid',$data['zcid'])->setInc('zcstatus');
+            Db::table('erp_order')->where('zcid',$data['zcid'])->setInc('yhstatus');
+            //同时如果仓库有记录，就去库存
+            $d = Db::name('order')->where('zcid',$data['zcid'])->select();
+            foreach ($d as $k => $v) {
+                // 如果是苏州备货，则入库后自动完成
+                if($v['bhdi']==1){
+                    Db::table('erp_order')->where('id',$v['id'])->update(array('bhstatus'=>2));
+                }
+                //检查该产品仓库里是否有库存
+                $c = Db::name('cangku')->where(array('brand'=>$v['brand'],'type'=>$v['type'],'size'=>$v['size'],'parma'=>$v['parma'],'leibie'=>$v['leibie'],'cangku' => 1))->find();
+                if(empty($c)){
+                    //无记录就添加新的记录
+                    $cangku = [
+                        'category'  =>  $v['category'],
+                        'brand'     =>  $v['brand'],
+                        'type'      =>  $v['type'],
+                        'size'      =>  $v['size'],
+                        'parma'     =>  $v['parma'],
+                        'number'    =>  $v['number'],
+                        'duifang'   =>  $v['duifang'],
+                        'leibie'    =>  $v['leibie'],
+                        'cangku'    =>  1
+                    ];
+                    Db::name('cangku')->insert($cangku);
+                    //添加仓库流水记录
+                    $cangku_log = $cangku;
+                    $cangku_log['change'] = $cangku['number'];
+                    $cangku_log['addtime'] = date('Y-m-d H:i:s',time());
+                    Db::name('cangku_log')->insert($cangku_log);
+                }else{
+                    //有记录就更新库存数
+                    $number = $c['number']+$v['number'];
+                    Db::table('erp_cangku')->where(array('brand'=>$v['brand'],'type'=>$v['type'],'size'=>$v['size'],'parma'=>$v['parma'],'leibie'=>$v['leibie'],'cangku' => 1))->update(array('number'=>$number));
+                    //添加仓库流水记录
+                    $cangku_log = [
+                        'oid'  =>  $v['id'],
+                        'uid'  =>  $v['usercode'],
+                        'category'  =>  $c['category'],
+                        'leibie'  =>  $c['leibie'],
+                        'brand'  =>  $c['brand'],
+                        'type'  =>  $c['type'],
+                        'size'  =>  $c['size'],
+                        'parma'  =>  $c['parma'],
+                        'jianshu'  =>  $c['jianshu'],
+                        'number'  =>  $number,
+                        'duifang'  =>  $c['duifang'],
+                        'cangku'  =>  $c['cangku'],
+                        'change'  =>  $v['number'],
+                        'addtime'  =>  date('Y-m-d H:i:s',time()),
+                    ];
+                    Db::name('cangku_log')->insert($cangku_log);
+                }
+
+            }
+            $respond['msg'] = "订单完成！工作之余要注意休息哟！";
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **苏州物流管理-客户确认
+     */
+    public function kehuqueren(){
+        valiPerm(Session::get('perm'),7);//访问权限验证
+        $this->assign([
+            'nav'           =>  config('menu.sumao'),
+            'controller'    =>request()->controller(),
+            'action'        =>  request()->action(),
+        ]);
+        return $this->fetch('kehuqueren');
+    }
+
+    /*
+    **苏州物流管理-客户确认-查询数据
+     */
+    public function getKhqrOrder(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $map = array();
+            // 搜索
+            if(isset($data['search'])){
+                if(!empty($data['search']['v1'])){
+                    $map[$data['search']['k1']] = $data['search']['v1'];
+                }
+                if(isset($data['search']['k2'])){
+                    $map['addtime'] = ['between time',[$data['search']['vds'],$data['search']['vde']]];
+                }
+            }
+            //筛选类别
+            $map['category'] = isset($data['category'])?$data['category']:'床垫';
+            $map['status'] = isset($data['status'])?$data['status']:2;
+            $d = Db::name('order_fh')->page($data['page'],$data['limit'])->where($map)->order('fhid desc')->select();
+            $respond = [
+                'code'  =>  0,
+                'msg'   =>  "success",
+                'count' =>  Db::name('order_fh')->where($map)->count('fhid'),
+                'data'  =>  $d,
+            ];
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **苏州物流管理-客户确认-确认客户收货
+     */
+    public function completeKhqr(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            //更新发货状态
+            Db::table('erp_order_fh')->where('fhid',$data['fhid'])->update(array('status'=>3,'wctime'=>date('Y-m-d H:i:s',time())));
+            //批量更新订单明细装车状态
+            Db::table('erp_order')->where('fhid',$data['fhid'])->setInc('fhstatus');
+
+            $respond['msg'] = "订单完成！工作之余要注意休息哟！";
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **业务部管理-财务收款
+     */
+    public function shoukuan(){
+        valiPerm(Session::get('perm'),30);//访问权限验证
+        $this->assign([
+            'nav'           =>  config('menu.sumao'),
+            'controller'    =>request()->controller(),
+            'action'        =>  request()->action(),
+        ]);
+        return $this->fetch('shoukuan');
+    }
+
+    /*
+    **业务部管理-财务收款-查询数据
+     */
+    public function getSkOrder(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            $map = array();
+            // 搜索
+            if(isset($data['search'])){
+                if(!empty($data['search']['v1'])){
+                    $map[$data['search']['k1']] = $data['search']['v1'];
+                }
+                if(isset($data['search']['k2'])){
+                    $map['addtime'] = ['between time',[$data['search']['vds'],$data['search']['vde']]];
+                }
+            }
+            //筛选类别
+            $map['category'] = isset($data['category'])?$data['category']:'床垫';
+            $map['skstatus'] = isset($data['skstatus'])?$data['skstatus']:0;
+            $map['status'] = ['neq','0'];
+            $d = Db::name('order_fh')->page($data['page'],$data['limit'])->where($map)->order('fhid desc')->select();
+            $respond = [
+                'code'  =>  0,
+                'msg'   =>  "success",
+                'count' =>  Db::name('order_fh')->where($map)->count('fhid'),
+                'data'  =>  $d,
+            ];
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+    /*
+    **业务部管理-财务收款-提交收款
+     */
+    public function completeSk(){
+        if(Request::instance()->isPost()){
+            $data = Request::instance()->post();
+            //更新收款状态和金额
+            Db::table('erp_order_fh')->where('fhid',$data['fhid'])->update(array('skstatus'=>1,'sktime'=>date('Y-m-d H:i:s',time()),'shoukuan'=>$data['shoukuan']));
+
+            $respond['msg'] = "打款完成！工作之余要注意休息哟！";
+            return $respond;
+        }else{
+            $this->error('非法请求');
+        }
+    }
+
+}

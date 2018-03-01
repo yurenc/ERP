@@ -1,0 +1,73 @@
+<style type="text/css">
+    .layui-table-cell{padding:0 3px;text-align:center;}
+    .laytable-cell-checkbox{padding:0 15px;}
+    .layui-elem-quote{padding:10px 0;margin-bottom:0;border-left: 1px solid #e2e2e2;border-top: 1px solid #e2e2e2;border-right: 1px solid #e2e2e2;border-radius:4px;}
+    .layui-table-view{margin:0;}
+</style>
+<blockquote class="layui-elem-quote">
+<div class="layui-row">
+  <div class="layui-col-md6" id="search1" style="clear:none;margin:0;">
+    <div class="layui-inline">
+      <label class="layui-form-label">请选择年份</label>
+      <div class="layui-input-inline">
+        <input type="text" class="layui-input" id="yearTj" placeholder="请选择统计年份">
+      </div>
+    </div>
+
+
+    <button class="layui-btn layui-btn-primary" type="button" onclick="goTongji()"><i class="layui-icon">&#xe615;</i>统计</button>
+  </div>
+</div>
+<script type="text/javascript">
+function goTongji(){
+    var yearTj = $("#yearTj").val();
+
+    // console.log(search);
+    if(yearTj.length!=0){
+      layui.use('table', function(){
+          var table = layui.table;
+          table.reload('orderTable', {
+            url: '{:url(\'Tongji/getMonthtj\')}'
+            ,where: {'yearTj':yearTj}
+            ,height:'full-130'
+            ,done: function(res, curr, count){
+              console.log(res);
+            }
+          });
+      });
+    }else{
+      layer.msg("亲！你必须告诉我一个年份");
+    }
+}
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  laydate.render({
+    elem: '#yearTj' //指定元素
+    ,type: 'year'
+    ,value: new Date()
+  });
+});
+</script>
+
+</blockquote>
+<table class="layui-table" lay-data="{
+    height:'full-130',
+    url:'{:url(\'Tongji/getMonthtj\')}',
+    method:'post',
+    even: true,
+    id:'orderTable'
+}" lay-filter="orderTable" id="orderTable">
+  <thead>
+    <tr>
+        <th lay-data="{field:'month', width:'20%'}">月份</th>
+        <th lay-data="{field:'chuangdian', width:'40%'}">床垫总销量</th>
+        <th lay-data="{field:'shafa', width:'40%'}">沙发总销量</th>
+    </tr>
+  </thead>
+</table>
+
+<script>
+    layui.use('table', function(){
+        var table = layui.table;
+    });
+</script>

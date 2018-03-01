@@ -1,0 +1,897 @@
+---------------------------------------------------------------
+[ 2017-12-30T09:12:15+08:00 ] 127.0.0.1 121.228.141.183 GET /
+[ info ] test.ymnl1998.com/ [运行时间：0.006453s][吞吐率：154.97req/s] [内存消耗：570.48kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/web/erp/public_html/application/home/controller/Index.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/index/index.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T09:12:19+08:00 ] 127.0.0.1 121.228.141.183 GET /home/goods/goods.html
+[ info ] test.ymnl1998.com/home/goods/goods.html [运行时间：0.007171s][吞吐率：139.45req/s] [内存消耗：656.78kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/tongji/monthtj.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->goods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/goods/index.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T09:12:20+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoods.html
+[ info ] test.ymnl1998.com/home/goods/getgoods.html [运行时间：0.006289s][吞吐率：159.01req/s] [内存消耗：689.05kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.000141s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:12:31+08:00 ] 127.0.0.1 121.228.141.183 GET /home/goods/goods.html
+[ info ] test.ymnl1998.com/home/goods/goods.html [运行时间：0.007123s][吞吐率：140.39req/s] [内存消耗：656.38kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->goods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/goods/index.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T09:12:31+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoods.html
+[ info ] test.ymnl1998.com/home/goods/getgoods.html [运行时间：0.006293s][吞吐率：158.91req/s] [内存消耗：689.05kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000267s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.000140s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:12:47+08:00 ] 127.0.0.1 121.228.141.183 GET /home/goods/goods.html
+[ info ] test.ymnl1998.com/home/goods/goods.html [运行时间：0.007215s][吞吐率：138.60req/s] [内存消耗：656.78kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/tongji/monthtj.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->goods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/goods/index.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T09:12:47+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoods.html
+[ info ] test.ymnl1998.com/home/goods/getgoods.html [运行时间：0.006254s][吞吐率：159.90req/s] [内存消耗：689.05kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000243s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.000146s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:16:49+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoodsattr.html
+[ info ] test.ymnl1998.com/home/goods/getgoodsattr.html [运行时间：0.007305s][吞吐率：136.89req/s] [内存消耗：688.83kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoodsattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoodsAttr[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000276s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 9 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT COUNT(attr_id) AS tp_count FROM `erp_goods_attr` WHERE  `gid` = 9 LIMIT 1 [ RunTime:0.000165s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:16:54+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoodsattr.html
+[ info ] test.ymnl1998.com/home/goods/getgoodsattr.html [运行时间：0.006202s][吞吐率：161.24req/s] [内存消耗：688.81kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoodsattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoodsAttr[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000247s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 9 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT COUNT(attr_id) AS tp_count FROM `erp_goods_attr` WHERE  `gid` = 9 LIMIT 1 [ RunTime:0.000143s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:17:02+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoods.html
+[ info ] test.ymnl1998.com/home/goods/getgoods.html [运行时间：0.006302s][吞吐率：158.68req/s] [内存消耗：689.05kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000260s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.000146s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:17:10+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoodsattr.html
+[ info ] test.ymnl1998.com/home/goods/getgoodsattr.html [运行时间：0.006193s][吞吐率：161.47req/s] [内存消耗：688.81kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoodsattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoodsAttr[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000252s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 9 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT COUNT(attr_id) AS tp_count FROM `erp_goods_attr` WHERE  `gid` = 9 LIMIT 1 [ RunTime:0.000163s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:17:36+08:00 ] 127.0.0.1 121.228.141.183 GET /home/goods/goods.html
+[ info ] test.ymnl1998.com/home/goods/goods.html [运行时间：0.007505s][吞吐率：133.24req/s] [内存消耗：656.78kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/tongji/monthtj.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->goods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/goods/index.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-30T09:17:36+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoods.html
+[ info ] test.ymnl1998.com/home/goods/getgoods.html [运行时间：0.006306s][吞吐率：158.58req/s] [内存消耗：689.05kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000260s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.000138s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:17:41+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoodsattr.html
+[ info ] test.ymnl1998.com/home/goods/getgoodsattr.html [运行时间：0.006777s][吞吐率：147.56req/s] [内存消耗：688.81kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoodsattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoodsAttr[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000295s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 9 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT COUNT(attr_id) AS tp_count FROM `erp_goods_attr` WHERE  `gid` = 9 LIMIT 1 [ RunTime:0.000132s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:17:44+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoodsattr.html
+[ info ] test.ymnl1998.com/home/goods/getgoodsattr.html [运行时间：0.006639s][吞吐率：150.63req/s] [内存消耗：688.82kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoodsattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoodsAttr[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000260s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 7 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT COUNT(attr_id) AS tp_count FROM `erp_goods_attr` WHERE  `gid` = 7 LIMIT 1 [ RunTime:0.000203s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:17:46+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoods.html
+[ info ] test.ymnl1998.com/home/goods/getgoods.html [运行时间：0.006660s][吞吐率：150.15req/s] [内存消耗：689.05kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000275s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:17:52+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoodsattr.html
+[ info ] test.ymnl1998.com/home/goods/getgoodsattr.html [运行时间：0.007008s][吞吐率：142.69req/s] [内存消耗：688.84kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoodsattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoodsAttr[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT COUNT(attr_id) AS tp_count FROM `erp_goods_attr` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.000191s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:17:55+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoodsattr.html
+[ info ] test.ymnl1998.com/home/goods/getgoodsattr.html [运行时间：0.006253s][吞吐率：159.92req/s] [内存消耗：688.82kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoodsattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoodsAttr[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT COUNT(attr_id) AS tp_count FROM `erp_goods_attr` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.000134s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:18:01+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoods.html
+[ info ] test.ymnl1998.com/home/goods/getgoods.html [运行时间：0.006353s][吞吐率：157.41req/s] [内存消耗：689.42kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '61',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'category' => '软体沙发',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '软体沙发'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '软体沙发'  AND `status` = 1 LIMIT 1 [ RunTime:0.000173s ]
+---------------------------------------------------------------
+[ 2017-12-30T09:18:02+08:00 ] 127.0.0.1 121.228.141.183 POST /home/goods/getgoods.html
+[ info ] test.ymnl1998.com/home/goods/getgoods.html [运行时间：0.006263s][吞吐率：159.67req/s] [内存消耗：689.40kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=ef2ps3sv8g6kc8i5vil0c11tt7',
+  'x-real-ip' => '121.228.141.183',
+  'x-forwarded-for' => '121.228.141.183',
+  'connection' => 'close',
+  'content-length' => '43',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'category' => '床垫',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000248s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.000140s ]

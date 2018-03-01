@@ -1,0 +1,75 @@
+<script type="text/javascript" src="/static/jqplot/jQuery.js"></script>
+<script type="text/javascript" src="/static/jqplot/jqplot.js"></script>
+<style type="text/css">
+    .layui-table-cell{padding:0 3px;text-align:center;}
+    .laytable-cell-checkbox{padding:0 15px;}
+    .layui-elem-quote{padding:10px 0;margin-bottom:0;border-left: 1px solid #e2e2e2;border-top: 1px solid #e2e2e2;border-right: 1px solid #e2e2e2;border-radius:4px;}
+    .layui-table-view{margin:0;}
+</style>
+<blockquote class="layui-elem-quote">
+<div class="layui-row">
+  <div class="layui-col-md6" id="search1" style="clear:none;margin:0;">
+    <div class="layui-inline">
+      <label class="layui-form-label">请选择年份</label>
+      <div class="layui-input-inline">
+        <input type="text" class="layui-input" id="yearTj" placeholder="请选择统计年份">
+      </div>
+    </div>
+
+
+    <button class="layui-btn layui-btn-primary" type="button" onclick="goTongji()"><i class="layui-icon">&#xe615;</i>统计</button>
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){
+  goTongji();
+})
+function goTongji(){
+    var yearTj = $("#yearTj").val();
+    if(yearTj.length==0){
+      var myDate = new Date();
+      yearTj = myDate.getFullYear();
+    }
+    $.ajax({
+      url: '{:url(\'Tongji/getMonthtj\')}',
+      type: 'POST',
+      data:{'yearTj':yearTj},
+      success:function(res){
+        console.log(res);
+        tjTu(res);
+      }
+    })
+}
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  laydate.render({
+    elem: '#yearTj' //指定元素
+    ,type: 'year'
+    ,value: new Date()
+  });
+});
+</script>
+</blockquote>
+
+<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;padding:20px 0;">
+    <legend>年度订单统计</legend>
+<!--     <div id="chart1"></div> -->
+    <div id="chart2"></div>
+</fieldset>
+
+<script type="text/javascript">
+function tjTu(res){
+    $('#chart2').html('');
+    var data = res.data;
+    var data_max = res.max; //Y轴最大刻度
+    var line_title = ["床垫","沙发"]; //曲线名称
+    var y_label = "月订单总数"; //Y轴标题
+    var x_label = "月份"; //X轴标题
+    var x = [1,2,3,4,5,6,7,8,9,10,11,12]; //定义X轴刻度值
+    var title = res.year+"年全年订单月度统计"; //统计图标标题
+    // j.jqplot.diagram.base("chart1", data, line_title, "这是统计标题", x, x_label, y_label, data_max, 1);
+    j.jqplot.diagram.base("chart2", data, line_title, title, x, x_label, y_label, data_max, 2);
+}
+</script>
+
+

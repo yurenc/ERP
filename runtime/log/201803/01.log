@@ -1,0 +1,1540 @@
+---------------------------------------------------------------
+[ 2018-03-01T08:52:15+08:00 ] 127.0.0.1 127.0.0.1 GET /home/goods/goods.html
+[ info ] www.scerp.cc/home/goods/goods.html [运行时间：0.130008s][吞吐率：7.69req/s] [内存消耗：1,520.27kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/nansheng/yworder.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/goods_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T08:52:16+08:00 ] 127.0.0.1 127.0.0.1 GET /home/login/out.html
+[ info ] www.scerp.cc/home/login/out.html [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：1,480.32kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'out',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/nansheng/yworder.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/login/out_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Login->out[ F:\phpstudy\WWWSCERP\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T08:52:16+08:00 ] 127.0.0.1 127.0.0.1 GET /home/login/index.html
+[ info ] www.scerp.cc/home/login/index.html [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：1,580.59kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/nansheng/yworder.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/login/index_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Login->index[ F:\phpstudy\WWWSCERP\application\home\controller\Login.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\login\index.html [ array (
+  0 => 'err',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T08:52:26+08:00 ] 127.0.0.1 127.0.0.1 POST /home/login/in.html
+[ info ] www.scerp.cc/home/login/in.html [运行时间：0.235013s][吞吐率：4.26req/s] [内存消耗：2,081.46kb] [文件加载：56]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'in',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.scerp.cc',
+  'cache-control' => 'max-age=0',
+  'content-length' => '16',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/login/in_html' => '',
+  'un' => 'admin',
+  'p' => 'admin',
+)
+[ info ] [ RUN ] app\home\controller\Login->in[ F:\phpstudy\WWWSCERP\application\home\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.040002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_admin` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_admin` WHERE  `uname` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_role` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2018-03-01T08:52:26+08:00 ] 127.0.0.1 127.0.0.1 GET /home/index/index.html
+[ info ] www.scerp.cc/home/index/index.html [运行时间：0.099006s][吞吐率：10.10req/s] [内存消耗：1,597.93kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpstudy\WWWSCERP\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\index\index.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T08:52:31+08:00 ] 127.0.0.1 127.0.0.1 GET /home/goods/goods.html
+[ info ] www.scerp.cc/home/goods/goods.html [运行时间：0.135008s][吞吐率：7.41req/s] [内存消耗：1,720.79kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/goods_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->goods[ F:\phpstudy\WWWSCERP\application\home\controller\Goods.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\goods\index.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T08:52:31+08:00 ] 127.0.0.1 127.0.0.1 POST /home/goods/getgoods.html
+[ info ] www.scerp.cc/home/goods/getgoods.html [运行时间：0.192011s][吞吐率：5.21req/s] [内存消耗：2,058.35kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/goods/goods.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/getgoods_html' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ F:\phpstudy\WWWSCERP\application\home\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.020002s ]
+---------------------------------------------------------------
+[ 2018-03-01T08:52:37+08:00 ] 127.0.0.1 127.0.0.1 POST /home/goods/getgoods.html
+[ info ] www.scerp.cc/home/goods/getgoods.html [运行时间：0.206012s][吞吐率：4.85req/s] [内存消耗：2,058.63kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/goods/goods.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '61',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/getgoods_html' => '',
+  'page' => '1',
+  'limit' => '10',
+  'category' => '软体沙发',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ F:\phpstudy\WWWSCERP\application\home\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '软体沙发'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '软体沙发'  AND `status` = 1 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2018-03-01T08:52:39+08:00 ] 127.0.0.1 127.0.0.1 POST /home/goods/getgoods.html
+[ info ] www.scerp.cc/home/goods/getgoods.html [运行时间：0.198012s][吞吐率：5.05req/s] [内存消耗：2,058.49kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/goods/goods.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/getgoods_html' => '',
+  'page' => '1',
+  'limit' => '10',
+  'category' => '床垫',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ F:\phpstudy\WWWSCERP\application\home\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.040002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2018-03-01T08:52:55+08:00 ] 127.0.0.1 127.0.0.1 POST /home/goods/getgoodsattr.html
+[ info ] www.scerp.cc/home/goods/getgoodsattr.html [运行时间：0.172010s][吞吐率：5.81req/s] [内存消耗：2,058.05kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoodsattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/goods/goods.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '5',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/getgoodsattr_html' => '',
+  'id' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoodsAttr[ F:\phpstudy\WWWSCERP\application\home\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 13 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(attr_id) AS tp_count FROM `erp_goods_attr` WHERE  `gid` = 13 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2018-03-01T08:53:02+08:00 ] 127.0.0.1 127.0.0.1 POST /home/goods/getgoodsattr.html
+[ info ] www.scerp.cc/home/goods/getgoodsattr.html [运行时间：0.178010s][吞吐率：5.62req/s] [内存消耗：2,058.05kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoodsattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/goods/goods.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '4',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/getgoodsattr_html' => '',
+  'id' => '7',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoodsAttr[ F:\phpstudy\WWWSCERP\application\home\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 7 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT COUNT(attr_id) AS tp_count FROM `erp_goods_attr` WHERE  `gid` = 7 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2018-03-01T08:53:10+08:00 ] 127.0.0.1 127.0.0.1 POST /home/goods/getgoodsattr.html
+[ info ] www.scerp.cc/home/goods/getgoodsattr.html [运行时间：0.197011s][吞吐率：5.08req/s] [内存消耗：2,058.05kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoodsattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/goods/goods.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '5',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/getgoodsattr_html' => '',
+  'id' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoodsAttr[ F:\phpstudy\WWWSCERP\application\home\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.044003s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 13 [ RunTime:0.031001s ]
+[ sql ] [ SQL ] SELECT COUNT(attr_id) AS tp_count FROM `erp_goods_attr` WHERE  `gid` = 13 LIMIT 1 [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2018-03-01T08:53:21+08:00 ] 127.0.0.1 127.0.0.1 GET /home/sumao/jiedan.html
+[ info ] www.scerp.cc/home/sumao/jiedan.html [运行时间：0.129007s][吞吐率：7.75req/s] [内存消耗：1,734.43kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'sumao',
+    2 => 'jiedan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/goods/goods.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/sumao/jiedan_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Sumao->jiedan[ F:\phpstudy\WWWSCERP\application\home\controller\Sumao.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\sumao\jiedan.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T08:53:27+08:00 ] 127.0.0.1 127.0.0.1 POST /home/sumao/getkehuinfo.html
+[ info ] www.scerp.cc/home/sumao/getkehuinfo.html [运行时间：0.198012s][吞吐率：5.05req/s] [内存消耗：2,117.85kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'sumao',
+    2 => 'getkehuinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/sumao/jiedan.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => '*/*',
+  'content-length' => '8',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/sumao/getkehuinfo_html' => '',
+  'k' => 'id',
+  'v' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Sumao->getKehuInfo[ F:\phpstudy\WWWSCERP\application\home\controller\Sumao.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058004s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_kehu` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_kehu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.038002s ]
+---------------------------------------------------------------
+[ 2018-03-01T08:53:43+08:00 ] 127.0.0.1 127.0.0.1 POST /home/goods/gettype.html
+[ info ] www.scerp.cc/home/goods/gettype.html [运行时间：0.174010s][吞吐率：5.75req/s] [内存消耗：2,065.45kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'gettype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/sumao/jiedan.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/gettype_html' => '',
+  'type' => '55',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getType[ F:\phpstudy\WWWSCERP\application\home\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `status` = 1  AND `type` = '55' LIMIT 1 [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `gid` = 10 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2018-03-01T08:53:45+08:00 ] 127.0.0.1 127.0.0.1 POST /home/goods/getattr.html
+[ info ] www.scerp.cc/home/goods/getattr.html [运行时间：0.146009s][吞吐率：6.85req/s] [内存消耗：2,060.98kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/sumao/jiedan.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => '*/*',
+  'content-length' => '10',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/getattr_html' => '',
+  'attr_id' => '11',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getAttr[ F:\phpstudy\WWWSCERP\application\home\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods_attr` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods_attr` WHERE  `attr_id` = 11 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2018-03-01T09:01:07+08:00 ] 127.0.0.1 127.0.0.1 GET /home/tongji/monthtj.html
+[ info ] www.scerp.cc/home/tongji/monthtj.html [运行时间：0.135008s][吞吐率：7.41req/s] [内存消耗：1,615.10kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'monthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/sumao/jiedan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/monthtj_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->monthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\tongji\monthtj.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:01:08+08:00 ] 127.0.0.1 127.0.0.1 POST /home/tongji/getmonthtj.html
+[ info ] www.scerp.cc/home/tongji/getmonthtj.html [运行时间：0.181011s][吞吐率：5.52req/s] [内存消耗：1,636.45kb] [文件加载：56]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'getmonthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => '*/*',
+  'content-length' => '11',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/getmonthtj_html' => '',
+  'yearTj' => '2018',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->getMonthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.045003s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'erp.erp_order' doesn't exist[F:\phpstudy\WWWSCERP\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-03-01T09:01:11+08:00 ] 127.0.0.1 127.0.0.1 GET /home/Sumao/shoukuan.html
+[ info ] www.scerp.cc/home/Sumao/shoukuan.html [运行时间：0.165010s][吞吐率：6.06req/s] [内存消耗：1,536.83kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Sumao',
+    2 => 'shoukuan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/Sumao/shoukuan_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:01:13+08:00 ] 127.0.0.1 127.0.0.1 GET /home/tongji/monthtj.html
+[ info ] www.scerp.cc/home/tongji/monthtj.html [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,615.27kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'monthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/sumao/jiedan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/monthtj_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->monthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\tongji\monthtj.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:01:13+08:00 ] 127.0.0.1 127.0.0.1 POST /home/tongji/getmonthtj.html
+[ info ] www.scerp.cc/home/tongji/getmonthtj.html [运行时间：0.141008s][吞吐率：7.09req/s] [内存消耗：1,636.45kb] [文件加载：56]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'getmonthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => '*/*',
+  'content-length' => '11',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/getmonthtj_html' => '',
+  'yearTj' => '2018',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->getMonthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'erp.erp_order' doesn't exist[F:\phpstudy\WWWSCERP\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-03-01T09:01:14+08:00 ] 127.0.0.1 127.0.0.1 GET /home/Caigou/cgdakuan.html
+[ info ] www.scerp.cc/home/Caigou/cgdakuan.html [运行时间：0.171009s][吞吐率：5.85req/s] [内存消耗：1,697.27kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Caigou',
+    2 => 'cgdakuan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/Caigou/cgdakuan_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Caigou->cgdakuan[ F:\phpstudy\WWWSCERP\application\home\controller\Caigou.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\caigou\cgdakuan.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:01:15+08:00 ] 127.0.0.1 127.0.0.1 POST /home/caigou/getcgdkorder.html
+[ info ] www.scerp.cc/home/caigou/getcgdkorder.html [运行时间：0.312018s][吞吐率：3.20req/s] [内存消耗：2,083.05kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'caigou',
+    2 => 'getcgdkorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/Caigou/cgdakuan.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/caigou/getcgdkorder_html' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Caigou->getCgDkOrder[ F:\phpstudy\WWWSCERP\application\home\controller\Caigou.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_caigou_zk` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_caigou_zk` WHERE  `status` = 1 ORDER BY zkid desc LIMIT 0,10 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(zkid) AS tp_count FROM `erp_caigou_zk` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2018-03-01T09:01:29+08:00 ] 127.0.0.1 127.0.0.1 GET /home/tongji/monthtj.html
+[ info ] www.scerp.cc/home/tongji/monthtj.html [运行时间：0.074005s][吞吐率：13.51req/s] [内存消耗：1,615.26kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'monthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/Caigou/cgdakuan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/monthtj_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->monthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\tongji\monthtj.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:01:29+08:00 ] 127.0.0.1 127.0.0.1 POST /home/tongji/getmonthtj.html
+[ info ] www.scerp.cc/home/tongji/getmonthtj.html [运行时间：0.129007s][吞吐率：7.75req/s] [内存消耗：1,636.45kb] [文件加载：56]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'getmonthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => '*/*',
+  'content-length' => '11',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/getmonthtj_html' => '',
+  'yearTj' => '2018',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->getMonthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'erp.erp_order' doesn't exist[F:\phpstudy\WWWSCERP\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-03-01T09:02:23+08:00 ] 127.0.0.1 127.0.0.1 GET /home/tongji/monthtj.html
+[ info ] www.scerp.cc/home/tongji/monthtj.html [运行时间：0.079004s][吞吐率：12.66req/s] [内存消耗：1,615.41kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'monthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/Caigou/cgdakuan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/monthtj_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->monthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\tongji\monthtj.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:02:24+08:00 ] 127.0.0.1 127.0.0.1 POST /home/tongji/getmonthtj.html
+[ info ] www.scerp.cc/home/tongji/getmonthtj.html [运行时间：0.223013s][吞吐率：4.48req/s] [内存消耗：1,636.45kb] [文件加载：56]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'getmonthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => '*/*',
+  'content-length' => '11',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/getmonthtj_html' => '',
+  'yearTj' => '2018',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->getMonthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056003s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'erp.erp_order' doesn't exist[F:\phpstudy\WWWSCERP\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-03-01T09:02:25+08:00 ] 127.0.0.1 127.0.0.1 GET /home/tongji/monthtj.html
+[ info ] www.scerp.cc/home/tongji/monthtj.html [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,615.41kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'monthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/Caigou/cgdakuan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/monthtj_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->monthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\tongji\monthtj.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:02:25+08:00 ] 127.0.0.1 127.0.0.1 POST /home/tongji/getmonthtj.html
+[ info ] www.scerp.cc/home/tongji/getmonthtj.html [运行时间：0.153009s][吞吐率：6.54req/s] [内存消耗：1,636.45kb] [文件加载：56]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'getmonthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => '*/*',
+  'content-length' => '11',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/getmonthtj_html' => '',
+  'yearTj' => '2018',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->getMonthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.046003s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'erp.erp_order' doesn't exist[F:\phpstudy\WWWSCERP\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-03-01T09:02:27+08:00 ] 127.0.0.1 127.0.0.1 GET /home/tongji/monthtj.html
+[ info ] www.scerp.cc/home/tongji/monthtj.html [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,615.41kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'monthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/Caigou/cgdakuan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/monthtj_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->monthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\tongji\monthtj.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:02:28+08:00 ] 127.0.0.1 127.0.0.1 POST /home/tongji/getmonthtj.html
+[ info ] www.scerp.cc/home/tongji/getmonthtj.html [运行时间：0.142008s][吞吐率：7.04req/s] [内存消耗：1,636.45kb] [文件加载：56]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'getmonthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => '*/*',
+  'content-length' => '11',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/tongji/getmonthtj_html' => '',
+  'yearTj' => '2018',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->getMonthtj[ F:\phpstudy\WWWSCERP\application\home\controller\Tongji.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'erp.erp_order' doesn't exist[F:\phpstudy\WWWSCERP\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-03-01T09:02:31+08:00 ] 127.0.0.1 127.0.0.1 GET /home/sumao/jiedan.html
+[ info ] www.scerp.cc/home/sumao/jiedan.html [运行时间：0.109006s][吞吐率：9.17req/s] [内存消耗：1,734.43kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'sumao',
+    2 => 'jiedan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/sumao/jiedan_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Sumao->jiedan[ F:\phpstudy\WWWSCERP\application\home\controller\Sumao.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\sumao\jiedan.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:02:32+08:00 ] 127.0.0.1 127.0.0.1 GET /home/sumao/jiedan.html
+[ info ] www.scerp.cc/home/sumao/jiedan.html [运行时间：0.076004s][吞吐率：13.16req/s] [内存消耗：1,734.68kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'sumao',
+    2 => 'jiedan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/sumao/jiedan_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Sumao->jiedan[ F:\phpstudy\WWWSCERP\application\home\controller\Sumao.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\sumao\jiedan.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:02:37+08:00 ] 127.0.0.1 127.0.0.1 GET /home/sumao/jiedan.html
+[ info ] www.scerp.cc/home/sumao/jiedan.html [运行时间：0.080004s][吞吐率：12.50req/s] [内存消耗：1,734.68kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'sumao',
+    2 => 'jiedan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/tongji/monthtj.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/sumao/jiedan_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Sumao->jiedan[ F:\phpstudy\WWWSCERP\application\home\controller\Sumao.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\sumao\jiedan.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:37:43+08:00 ] 127.0.0.1 127.0.0.1 GET /home/nansheng/yworder.html
+[ info ] www.scerp.cc/home/nansheng/yworder.html [运行时间：0.093005s][吞吐率：10.75req/s] [内存消耗：1,747.89kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'nansheng',
+    2 => 'yworder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.scerp.cc/home/sumao/jiedan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/nansheng/yworder_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Nansheng->yworder[ F:\phpstudy\WWWSCERP\application\home\controller\Nansheng.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWWSCERP\public/../application/home\view\nansheng\yworder.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-01T09:37:44+08:00 ] 127.0.0.1 127.0.0.1 POST /home/nansheng/getorder.html
+[ info ] www.scerp.cc/home/nansheng/getorder.html [运行时间：0.234013s][吞吐率：4.27req/s] [内存消耗：2,117.09kb] [文件加载：55]
+[ info ] [ LANG ] F:\phpstudy\WWWSCERP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'nansheng',
+    2 => 'getorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=kritd9ijhtedgqv4khmf4elig6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.scerp.cc/home/nansheng/yworder.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.scerp.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'close',
+  'host' => 'www.scerp.cc',
+)
+[ info ] [ PARAM ] array (
+  '/home/nansheng/getorder_html' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Nansheng->getOrder[ F:\phpstudy\WWWSCERP\application\home\controller\Nansheng.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043002s ] mysql:host=116.62.146.123;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_beihuo` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_beihuo` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_beihuo` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.024002s ]

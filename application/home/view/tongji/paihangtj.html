@@ -1,0 +1,80 @@
+<style type="text/css">
+    .layui-table-cell{padding:0 3px;text-align:center;}
+    .laytable-cell-checkbox{padding:0 15px;}
+    .layui-elem-quote{padding:10px 0;margin-bottom:0;border-left: 1px solid #e2e2e2;border-top: 1px solid #e2e2e2;border-right: 1px solid #e2e2e2;border-radius:4px;}
+    .layui-table-view{margin:0;}
+</style>
+<blockquote class="layui-elem-quote">
+<div class="layui-row">
+  <div class="layui-col-md12" id="search1" style="clear:none;margin:0;">
+    <div class="layui-form layui-input-inline" id="category">
+      <input type="radio" name="category" value="床垫" title="床垫" checked lay-filter="dcategory">
+      <input type="radio" name="category" value="软体沙发" title="软体沙发" lay-filter="dcategory">
+    </div>
+    <div class="layui-inline">
+      <label class="layui-form-label">请选择年月</label>
+      <div class="layui-input-inline">
+        <input type="text" class="layui-input" id="monthTj" placeholder="请选择统计年月">
+      </div>
+    </div>
+    <button class="layui-btn layui-btn-primary" type="button" onclick="goTongji()"><i class="layui-icon">&#xe615;</i>统计</button>
+  </div>
+</div>
+<script type="text/javascript">
+layui.use('form', function(){
+  var form = layui.form;
+  form.on('radio(dcategory)', function(data){
+    goTongji()
+  });
+});
+function goTongji(){
+    var monthTj = $("#monthTj").val();
+    var category = $("#category input[name='category']:checked").val();
+    // console.log(search);
+    if(monthTj.length!=0){
+      layui.use('table', function(){
+          var table = layui.table;
+          table.reload('orderTable', {
+            url: '{:url(\'Tongji/getPaihangtj\')}'
+            ,where: {'monthTj':monthTj,'category':category}
+            ,height:'full-130'
+            ,done: function(res, curr, count){
+              console.log(res);
+            }
+          });
+      });
+    }else{
+      layer.msg("亲！你必须告诉我一个年月");
+    }
+}
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  laydate.render({
+    elem: '#monthTj' //指定元素
+    ,type: 'month'
+    ,value: new Date()
+  });
+});
+</script>
+
+</blockquote>
+<table class="layui-table" lay-data="{
+    height:'full-130',
+    url:'{:url(\'Tongji/getPaihangtj\')}',
+    method:'post',
+    even: true,
+    id:'orderTable'
+}" lay-filter="orderTable" id="orderTable">
+  <thead>
+    <tr>
+        <th lay-data="{field:'type', width:'20%'}">型号</th>
+        <th lay-data="{field:'total', width:'40%'}">销量</th>
+    </tr>
+  </thead>
+</table>
+
+<script>
+    layui.use('table', function(){
+        var table = layui.table;
+    });
+</script>

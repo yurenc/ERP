@@ -1,0 +1,333 @@
+<style type="text/css">
+    .box{width:92%;margin:0 auto;padding:20px;margin-bottom:50px;border:1px solid #e2e2e2;}
+</style>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  <legend>苏州业务接单</legend>
+</fieldset>
+<div class="box">
+<form class="layui-form" action="" method="post">
+    <!-- 以下是栅格行 -->
+    <div class="layui-row layui-col-space5">
+      <div class="layui-col-md4">
+        <!-- 以下是表单 -->
+          <div class="layui-form-item">
+            <label class="layui-form-label">客户编号</label>
+            <div class="layui-input-block">
+              <input type="text" name="usercode" required  lay-verify="required" placeholder="请输入客户编号" autocomplete="on" class="layui-input">
+            </div>
+          </div>
+        <!-- 以上是表单 -->
+      </div>
+      <div class="layui-col-md4">
+        <!-- 以下是表单 -->
+          <div class="layui-form-item">
+            <label class="layui-form-label">客户名称</label>
+            <div class="layui-input-block">
+              <input type="text" name="username" required  lay-verify="required" placeholder="请输入客户名称" autocomplete="on" class="layui-input">
+            </div>
+          </div>
+        <!-- 以上是表单 -->
+      </div>
+      <div class="layui-col-md4">
+        <!-- 以下是表单 -->
+          <div class="layui-form-item">
+            <label class="layui-form-label">收款方式</label>
+            <div class="layui-input-block">
+              <input type="text" name="payment" required  lay-verify="required" placeholder="请输入收款方式" autocomplete="on" class="layui-input">
+            </div>
+          </div>
+        <!-- 以上是表单 -->
+      </div>
+    </div>
+    <!-- 以上是栅格行 -->
+    <!-- 以下是栅格行 -->
+    <div class="layui-row layui-col-space5">
+      <div class="layui-col-md4">
+      <!-- 以下是表单 -->
+        <div class="layui-form-item">
+          <label class="layui-form-label">要货日期</label>
+          <div class="layui-input-block">
+            <input type="text" name="yqshtime" required  lay-verify="required" placeholder="请输入要求送货日期" autocomplete="off" class="layui-input" id="shrq">
+          </div>
+        </div>
+      <!-- 以上是表单 -->
+      </div>
+      <div class="layui-col-md8">
+      <!-- 以下是表单 -->
+        <div class="layui-form-item">
+          <label class="layui-form-label">送货地址</label>
+          <div class="layui-input-block">
+            <input type="text" name="shaddress" required  lay-verify="required" placeholder="请输入送货地址" autocomplete="on" class="layui-input">
+          </div>
+        </div>
+      <!-- 以上是表单 -->
+      </div>
+    </div>
+    <!-- 以上是栅格行 -->
+    <!-- 以下是栅格行 -->
+    <div class="layui-row layui-col-space5">
+      <div class="layui-col-md12">
+        <!-- 以下是表单 -->
+          <div class="layui-form-item">
+            <label class="layui-form-label">备注</label>
+            <div class="layui-input-block">
+              <input type="text" name="note" required  lay-verify="required" placeholder="请输入备注" autocomplete="off" class="layui-input" value="-">
+            </div>
+          </div>
+        <!-- 以上是表单 -->
+      </div>
+    </div>
+    <!-- 以上是栅格行 -->
+<fieldset class="layui-elem-field layui-field-title" style=""></fieldset>
+    <!-- 以下是栅格行 -->
+    <div class="layui-row layui-col-space5">
+      <div class="layui-col-md2" style="text-align:center;">
+        型号
+      </div>
+      <div class="layui-col-md2" style="text-align:center;">
+        类别
+      </div>
+      <div class="layui-col-md1" style="text-align:center;">
+        品牌
+      </div>
+      <div class="layui-col-md3" style="text-align:center;">
+        规格-布号/方向
+      </div>
+      <div class="layui-col-md1" style="text-align:center;">
+        堆放区域
+      </div>
+      <div class="layui-col-md1" style="text-align:center;">
+        单价
+      </div>
+      <div class="layui-col-md1" style="text-align:center;">
+        数量
+      </div>
+    </div>
+    <!-- 以上是栅格行 -->
+    <!-- 以下是栅格行 -->
+    <div class="attrBox">
+    <div class="layui-row layui-col-space5">
+      <div class="layui-col-md2">
+        <div class="layui-input-block" style="margin-left:0px;">
+          <input type="hidden" name="gid[]">
+          <input type="hidden" name="category[]">
+          <input type="text" name="type[]" required  lay-verify="required" placeholder="型号" autocomplete="on" class="layui-input" onchange="getType(0)">
+        </div>
+      </div>
+      <div class="layui-col-md2">
+        <div class="layui-input-block" style="margin-left:0px;">
+          <input type="text" name="leibie[]" required  lay-verify="required" placeholder="类别" autocomplete="on" class="layui-input" disabled="disabled">
+        </div>
+      </div>
+      <div class="layui-col-md1">
+        <div class="layui-input-block" style="margin-left:0px;">
+          <input type="text" name="brand[]" required  lay-verify="required" placeholder="品牌" autocomplete="on" class="layui-input" disabled="disabled">
+        </div>
+      </div>
+      <div class="layui-col-md3">
+        <div class="layui-input-block" style="margin-left:0px;">
+            <select name="sizeParma[]" lay-verify="required" lay-filter="changeAttr" erp-index="0">
+              <option value="0">请选择规格-布号/方向</option>
+            </select>
+        </div>
+      </div>
+      <div class="layui-col-md1">
+        <div class="layui-input-block" style="margin-left:0px;">
+          <input type="hidden" name="size[]">
+          <input type="hidden" name="parma[]">
+          <input type="text" name="duifang[]" required  lay-verify="required" placeholder="堆放区域" autocomplete="on" class="layui-input" disabled="disabled">
+        </div>
+      </div>
+      <div class="layui-col-md1">
+        <div class="layui-input-block" style="margin-left:0px;">
+          <input type="text" name="price[]" required  lay-verify="required" placeholder="单价" autocomplete="on" class="layui-input" disabled="disabled">
+        </div>
+      </div>
+      <div class="layui-col-md1">
+        <div class="layui-input-block" style="margin-left:0px;">
+          <input type="text" name="number[]" required  lay-verify="required" placeholder="数量" autocomplete="on" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-col-md1">
+        <a href="javascript:addAttr(0);" class="layui-btn attrBtn"><i class="layui-icon">&#xe654;</i> </a>
+      </div>
+    </div>
+    </div>
+    <!-- 以上是栅格行 -->
+
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+      <button type="reset" id="formReset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<script>
+// 自动加载客户信息
+$(".box input[name='usercode']").blur(function(){
+    var usercode = $(".box input[name='usercode']").val();
+    if(usercode.length==0){return false;}
+    var userInfo = getUserInfo(usercode,'');
+    changeUserInfoIpt(userInfo);
+})
+$(".box input[name='username']").blur(function(){
+    var username = $(".box input[name='username']").val();
+    if(username.length==0){return false;}
+    var userInfo = getUserInfo('',username);
+    changeUserInfoIpt(userInfo);
+})
+function changeUserInfoIpt(userInfo){
+  if(!userInfo.empty){
+    $(".box input[name='usercode']").val(userInfo.id);
+    $(".box input[name='username']").val(userInfo.nicheng);
+    $(".box input[name='payment']").val(userInfo.jkfs);
+    $(".box input[name='shaddress']").val(userInfo.address);
+  }else{
+    $(".box input[name='usercode']").val('');
+    $(".box input[name='username']").val('');
+    $(".box input[name='payment']").val('');
+    $(".box input[name='shaddress']").val('');
+    layer.msg("抱歉！暂无该客户的信息");
+  }
+}
+function getUserInfo(usercode,username){
+  if(usercode.length!=0){
+    var k = 'id';
+    var v = usercode;
+  }
+  if(username.length!=0){
+    var k = 'nicheng';
+    var v = username;
+  }
+  var result = {};
+  $.ajax({
+    url: "{:url('Sumao/getKehuInfo')}",
+    type: 'POST',
+    async: false,
+    data: {'k':k,'v':v},
+    success:function(res){
+      result = res;
+    }
+  })
+  return result;
+}
+//
+// 自动加载产品信息
+function getType(i){
+  var type = $(".attrBox input[name='type[]']:eq("+i+")").val();
+  var result = {};
+  $.ajax({
+    url: "{:url('Goods/getType')}",
+    type: 'POST',
+    async: false,
+    data: {'type':type},
+    success:function(res){
+      result = res;
+    }
+  })
+  // console.log(result);
+  var strAttrId = "";
+  for (var j=0; j<result['attr_id'].length; j++) {
+    strAttrId += "<option value=\""+result.attr_id[j]+"\">"+result.size[j]+"——"+result.parma[j]+"</option>"
+  };
+  $(".attrBox input[name='gid[]']:eq("+i+")").val(result.id);
+  $(".attrBox input[name='category[]']:eq("+i+")").val(result.category);
+  $(".attrBox input[name='type[]']:eq("+i+")").val(result.type);
+  $(".attrBox input[name='leibie[]']:eq("+i+")").val(result.leibie);
+  $(".attrBox input[name='brand[]']:eq("+i+")").val(result.brand);
+  $(".attrBox select[name='sizeParma[]']:eq("+i+")").html('<option value="0">请选择规格-布号/方向</option>');
+  $(".attrBox select[name='sizeParma[]']:eq("+i+")").append(strAttrId);
+  $(".attrBox input[name='duifang[]']:eq("+i+")").val('');
+  $(".attrBox input[name='price[]']:eq("+i+")").val('');
+  // 更新渲染
+  layui.use('form', function(){
+    var form = layui.form;
+    form.render();
+  });
+}
+function changeAttr(i){
+  alert(i);
+}
+function addAttr(i){
+  var j = i+1;
+  var str = '<div class="layui-row layui-col-space5"><div class="layui-col-md2"><div class="layui-input-block" style="margin-left:0px;"><input type="hidden" name="gid[]"><input type="hidden" name="category[]"><input type="text" name="type[]" required  lay-verify="required" placeholder="型号" autocomplete="on" class="layui-input" onchange="getType('+j+')"></div></div><div class="layui-col-md2"><div class="layui-input-block" style="margin-left:0px;"><input type="text" name="leibie[]" required  lay-verify="required" placeholder="类别" autocomplete="on" class="layui-input" disabled="disabled"></div></div><div class="layui-col-md1"><div class="layui-input-block" style="margin-left:0px;"><input type="text" name="brand[]" required  lay-verify="required" placeholder="品牌" autocomplete="on" class="layui-input" disabled="disabled"></div></div><div class="layui-col-md3"><div class="layui-input-block" style="margin-left:0px;"><select name="sizeParma[]" lay-verify="required" lay-filter="changeAttr" erp-index="'+j+'"><option value="0">请选择规格-布号/方向</option></select></div></div><div class="layui-col-md1"><div class="layui-input-block" style="margin-left:0px;"><input type="hidden" name="size[]"><input type="hidden" name="parma[]"><input type="text" name="duifang[]" required  lay-verify="required" placeholder="堆放区域" autocomplete="on" class="layui-input" disabled="disabled"></div></div><div class="layui-col-md1"><div class="layui-input-block" style="margin-left:0px;"><input type="text" name="price[]" required  lay-verify="required" placeholder="单价" autocomplete="on" class="layui-input" disabled="disabled"></div></div><div class="layui-col-md1"><div class="layui-input-block" style="margin-left:0px;"><input type="text" name="number[]" required  lay-verify="required" placeholder="数量" autocomplete="on" class="layui-input"></div></div><div class="layui-col-md1"><a href="javascript:addAttr('+j+');" class="layui-btn attrBtn"><i class="layui-icon">&#xe654;</i> </a></div></div>';
+  $(".box .attrBox").append(str);
+  $(".box .attrBox .attrBtn").eq(i).attr('href','javascript:delAttr('+i+')');
+  $(".box .attrBox .attrBtn").eq(i).addClass('layui-btn-warm');
+  $(".box .attrBox .attrBtn").eq(i).html('<i class="layui-icon">&#xe640;</i>');
+  // 更新渲染
+  layui.use('form', function(){
+    var form = layui.form;
+    form.render();
+  });
+}
+function delAttr(i){
+  $(".box .attrBox .layui-row").eq(i).remove();
+  var len = $(".box .attrBox .layui-row").length;
+  for(j=i;j<len;j++){
+      $(".box .attrBox input[name='type[]']").eq(j).attr('onchange','getType('+j+')');
+      $(".box .attrBox select[name='sizeParma[]']").eq(j).attr('erp-index',j);
+      if(j!=len-1){
+          $(".box .attrBox .attrBtn").eq(j).attr('href','javascript:delAttr('+j+')');
+      }else{
+         $(".box .attrBox .attrBtn").eq(j).attr('href','javascript:addAttr('+j+')');
+      }
+  }
+  // 更新渲染
+  layui.use('form', function(){
+    var form = layui.form;
+    form.render();
+  });
+}
+
+
+layui.use('form', function(){
+  var form = layui.form;
+  form.on('select(changeAttr)', function(data){
+    var erpIndex = $(data.elem).attr('erp-index');
+    var attrId = data.value
+    if(attrId==0){
+      return false;
+    }
+    var result = {};
+    $.ajax({
+      url: "{:url('Goods/getAttr')}",
+      type: 'POST',
+      async: false,
+      data: {'attr_id':attrId},
+      success:function(res){
+        result = res;
+      }
+    })
+    $(".attrBox input[name='size[]']:eq("+erpIndex+")").val(result.size);
+    $(".attrBox input[name='parma[]']:eq("+erpIndex+")").val(result.parma);
+    $(".attrBox input[name='duifang[]']:eq("+erpIndex+")").val(result.nandf);
+    $(".attrBox input[name='price[]']:eq("+erpIndex+")").val(result.price);
+  });
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    // console.log(data.field);
+    $.ajax({
+      url: "{:url('Sumao/addOrder')}",
+      type: 'POST',
+      data: data.field,
+      success:function(res){
+          // console.log(res);
+          layer.msg(res.msg);
+          $("#formReset").click();
+      }
+    })
+    return false;
+  });
+});
+
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  laydate.render({
+    elem: '#shrq' //指定元素
+  });
+});
+</script>
+

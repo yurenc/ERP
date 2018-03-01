@@ -1,0 +1,1059 @@
+---------------------------------------------------------------
+[ 2018-01-12T17:49:27+08:00 ] 127.0.0.1 121.238.200.73 GET /
+[ info ] test.ymnl1998.com/ [运行时间：0.406485s][吞吐率：2.46req/s] [内存消耗：532.98kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:28+08:00 ] 127.0.0.1 121.238.200.73 GET /home/login/index.html
+[ info ] test.ymnl1998.com/home/login/index.html [运行时间：0.039606s][吞吐率：25.25req/s] [内存消耗：547.13kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->index[ /www/web/erp/public_html/application/home/controller/Login.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/login/index.html [ array (
+  0 => 'err',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:35+08:00 ] 127.0.0.1 121.238.200.73 POST /home/login/in.html
+[ info ] test.ymnl1998.com/home/login/in.html [运行时间：0.190538s][吞吐率：5.25req/s] [内存消耗：707.23kb] [文件加载：56]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'in',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/index.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'content-length' => '16',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://test.ymnl1998.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'un' => 'admin',
+  'p' => 'admin',
+)
+[ info ] [ RUN ] app\home\controller\Login->in[ /www/web/erp/public_html/application/home/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.049906s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_admin` [ RunTime:0.067612s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_admin` WHERE  `uname` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.003381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_role` [ RunTime:0.025942s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001142s ]
+---------------------------------------------------------------
+[ 2018-01-12T17:49:35+08:00 ] 127.0.0.1 121.238.200.73 GET /home/index/index.html
+[ info ] test.ymnl1998.com/home/index/index.html [运行时间：0.139875s][吞吐率：7.15req/s] [内存消耗：571.39kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/login/index.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/web/erp/public_html/application/home/controller/Index.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/index/index.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:41+08:00 ] 127.0.0.1 121.238.200.73 GET /home/sumao/jiedan.html
+[ info ] test.ymnl1998.com/home/sumao/jiedan.html [运行时间：0.025158s][吞吐率：39.75req/s] [内存消耗：623.73kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'sumao',
+    2 => 'jiedan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/index/index.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Sumao->jiedan[ /www/web/erp/public_html/application/home/controller/Sumao.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/sumao/jiedan.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:43+08:00 ] 127.0.0.1 121.238.200.73 GET /home/nansheng/yworder.html
+[ info ] test.ymnl1998.com/home/nansheng/yworder.html [运行时间：0.093798s][吞吐率：10.66req/s] [内存消耗：636.83kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'nansheng',
+    2 => 'yworder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/sumao/jiedan.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Nansheng->yworder[ /www/web/erp/public_html/application/home/controller/Nansheng.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/nansheng/yworder.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:44+08:00 ] 127.0.0.1 121.238.200.73 POST /home/nansheng/getorder.html
+[ info ] test.ymnl1998.com/home/nansheng/getorder.html [运行时间：0.056010s][吞吐率：17.85req/s] [内存消耗：724.93kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'nansheng',
+    2 => 'getorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/nansheng/yworder.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Nansheng->getOrder[ /www/web/erp/public_html/application/home/controller/Nansheng.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000411s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_order` [ RunTime:0.037132s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_order` WHERE  `category` = '床垫'  AND `isdelete` = 0  AND (  `yhstatus` = 1  AND `bhstatus` <> 2 OR `bhstatus` = 1 ) ORDER BY id desc LIMIT 0,10 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_order` WHERE  `category` = '床垫'  AND `isdelete` = 0  AND (  `yhstatus` = 1  AND `bhstatus` <> 2 OR `bhstatus` = 1 ) LIMIT 1 [ RunTime:0.007709s ]
+---------------------------------------------------------------
+[ 2018-01-12T17:49:44+08:00 ] 127.0.0.1 121.238.200.73 POST /home/nansheng/getkucun.html
+[ info ] test.ymnl1998.com/home/nansheng/getkucun.html [运行时间：0.027967s][吞吐率：35.76req/s] [内存消耗：510.77kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'nansheng',
+    2 => 'getkucun',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/nansheng/yworder.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'content-length' => '12',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'goods_sn' => '1-2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:45+08:00 ] 127.0.0.1 121.238.200.73 GET /home/caigou/cgorder.html
+[ info ] test.ymnl1998.com/home/caigou/cgorder.html [运行时间：0.034374s][吞吐率：29.09req/s] [内存消耗：696.56kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'caigou',
+    2 => 'cgorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/nansheng/yworder.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Caigou->cgorder[ /www/web/erp/public_html/application/home/controller/Caigou.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/caigou/cgorder.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:45+08:00 ] 127.0.0.1 121.238.200.73 POST /home/caigou/getorder.html
+[ info ] test.ymnl1998.com/home/caigou/getorder.html [运行时间：0.032142s][吞吐率：31.11req/s] [内存消耗：702.44kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'caigou',
+    2 => 'getorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/caigou/cgorder.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Caigou->getOrder[ /www/web/erp/public_html/application/home/controller/Caigou.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000356s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_caigou` [ RunTime:0.024540s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_caigou` WHERE  `isdelete` = 0  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_caigou` WHERE  `isdelete` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000216s ]
+---------------------------------------------------------------
+[ 2018-01-12T17:49:46+08:00 ] 127.0.0.1 121.238.200.73 GET /home/user/kehu.html
+[ info ] test.ymnl1998.com/home/user/kehu.html [运行时间：0.048496s][吞吐率：20.62req/s] [内存消耗：630.84kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'user',
+    2 => 'kehu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/caigou/cgorder.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\User->kehu[ /www/web/erp/public_html/application/home/controller/User.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/user/kehu.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:46+08:00 ] 127.0.0.1 121.238.200.73 POST /home/user/getkehu.html
+[ info ] test.ymnl1998.com/home/user/getkehu.html [运行时间：0.008901s][吞吐率：112.35req/s] [内存消耗：695.82kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'user',
+    2 => 'getkehu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/user/kehu.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\User->getKehu[ /www/web/erp/public_html/application/home/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_kehu` [ RunTime:0.002081s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_kehu` WHERE  `status` = 1 LIMIT 0,10 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_kehu` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000206s ]
+---------------------------------------------------------------
+[ 2018-01-12T17:49:46+08:00 ] 127.0.0.1 121.238.200.73 GET /home/tongji/monthtj.html
+[ info ] test.ymnl1998.com/home/tongji/monthtj.html [运行时间：0.019348s][吞吐率：51.68req/s] [内存消耗：575.45kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'tongji',
+    2 => 'monthtj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/user/kehu.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Tongji->monthtj[ /www/web/erp/public_html/application/home/controller/Tongji.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/tongji/monthtj.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:47+08:00 ] 127.0.0.1 121.238.200.73 GET /home/goods/goods.html
+[ info ] test.ymnl1998.com/home/goods/goods.html [运行时间：0.024766s][吞吐率：40.38req/s] [内存消耗：659.27kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/tongji/monthtj.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->goods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/goods/index.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:48+08:00 ] 127.0.0.1 121.238.200.73 POST /home/goods/getgoods.html
+[ info ] test.ymnl1998.com/home/goods/getgoods.html [运行时间：0.009399s][吞吐率：106.40req/s] [内存消耗：690.41kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'getgoods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Goods->getGoods[ /www/web/erp/public_html/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000323s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_goods` [ RunTime:0.002053s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_goods` WHERE  `category` = '床垫'  AND `status` = 1 LIMIT 1 [ RunTime:0.000253s ]
+---------------------------------------------------------------
+[ 2018-01-12T17:49:49+08:00 ] 127.0.0.1 121.238.200.73 GET /home/index/index.html
+[ info ] test.ymnl1998.com/home/index/index.html [运行时间：0.007222s][吞吐率：138.47req/s] [内存消耗：571.09kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/goods/goods.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/web/erp/public_html/application/home/controller/Index.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/index/index.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:50+08:00 ] 127.0.0.1 121.238.200.73 GET /home/sumao/jiedan.html
+[ info ] test.ymnl1998.com/home/sumao/jiedan.html [运行时间：0.008114s][吞吐率：123.25req/s] [内存消耗：622.24kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'sumao',
+    2 => 'jiedan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/index/index.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Sumao->jiedan[ /www/web/erp/public_html/application/home/controller/Sumao.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/sumao/jiedan.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:52+08:00 ] 127.0.0.1 121.238.200.73 GET /home/nansheng/yworder.html
+[ info ] test.ymnl1998.com/home/nansheng/yworder.html [运行时间：0.007880s][吞吐率：126.90req/s] [内存消耗：635.37kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'nansheng',
+    2 => 'yworder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/sumao/jiedan.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Nansheng->yworder[ /www/web/erp/public_html/application/home/controller/Nansheng.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/nansheng/yworder.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:52+08:00 ] 127.0.0.1 121.238.200.73 POST /home/nansheng/getorder.html
+[ info ] test.ymnl1998.com/home/nansheng/getorder.html [运行时间：0.008944s][吞吐率：111.81req/s] [内存消耗：721.47kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'nansheng',
+    2 => 'getorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/nansheng/yworder.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Nansheng->getOrder[ /www/web/erp/public_html/application/home/controller/Nansheng.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000347s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_order` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_order` WHERE  `category` = '床垫'  AND `isdelete` = 0  AND (  `yhstatus` = 1  AND `bhstatus` <> 2 OR `bhstatus` = 1 ) ORDER BY id desc LIMIT 0,10 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_order` WHERE  `category` = '床垫'  AND `isdelete` = 0  AND (  `yhstatus` = 1  AND `bhstatus` <> 2 OR `bhstatus` = 1 ) LIMIT 1 [ RunTime:0.000208s ]
+---------------------------------------------------------------
+[ 2018-01-12T17:49:53+08:00 ] 127.0.0.1 121.238.200.73 POST /home/nansheng/getkucun.html
+[ info ] test.ymnl1998.com/home/nansheng/getkucun.html [运行时间：0.005700s][吞吐率：175.44req/s] [内存消耗：506.73kb] [文件加载：50]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'nansheng',
+    2 => 'getkucun',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/nansheng/yworder.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'content-length' => '12',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'goods_sn' => '1-2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:53+08:00 ] 127.0.0.1 121.238.200.73 GET /home/caigou/cgorder.html
+[ info ] test.ymnl1998.com/home/caigou/cgorder.html [运行时间：0.009063s][吞吐率：110.34req/s] [内存消耗：695.18kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'caigou',
+    2 => 'cgorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/nansheng/yworder.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Caigou->cgorder[ /www/web/erp/public_html/application/home/controller/Caigou.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/caigou/cgorder.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:54+08:00 ] 127.0.0.1 121.238.200.73 POST /home/caigou/getorder.html
+[ info ] test.ymnl1998.com/home/caigou/getorder.html [运行时间：0.007995s][吞吐率：125.08req/s] [内存消耗：702.44kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'caigou',
+    2 => 'getorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/caigou/cgorder.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Caigou->getOrder[ /www/web/erp/public_html/application/home/controller/Caigou.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000347s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_caigou` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_caigou` WHERE  `isdelete` = 0  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_caigou` WHERE  `isdelete` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000143s ]
+---------------------------------------------------------------
+[ 2018-01-12T17:49:54+08:00 ] 127.0.0.1 121.238.200.73 GET /home/user/kehu.html
+[ info ] test.ymnl1998.com/home/user/kehu.html [运行时间：0.007724s][吞吐率：129.47req/s] [内存消耗：629.58kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'user',
+    2 => 'kehu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/caigou/cgorder.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\User->kehu[ /www/web/erp/public_html/application/home/controller/User.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/user/kehu.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-12T17:49:54+08:00 ] 127.0.0.1 121.238.200.73 POST /home/user/getkehu.html
+[ info ] test.ymnl1998.com/home/user/getkehu.html [运行时间：0.006897s][吞吐率：144.99req/s] [内存消耗：695.82kb] [文件加载：55]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'user',
+    2 => 'getkehu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/user/kehu.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.ymnl1998.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\User->getKehu[ /www/web/erp/public_html/application/home/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:host=127.0.0.1;port=3306;dbname=erp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `erp_kehu` [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT * FROM `erp_kehu` WHERE  `status` = 1 LIMIT 0,10 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `erp_kehu` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000140s ]
+---------------------------------------------------------------
+[ 2018-01-12T17:49:55+08:00 ] 127.0.0.1 121.238.200.73 GET /home/sumao/jiedan.html
+[ info ] test.ymnl1998.com/home/sumao/jiedan.html [运行时间：0.007803s][吞吐率：128.16req/s] [内存消耗：622.21kb] [文件加载：51]
+[ info ] [ LANG ] /www/web/erp/public_html/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'sumao',
+    2 => 'jiedan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.ymnl1998.com',
+  'referer' => 'http://test.ymnl1998.com/home/user/kehu.html',
+  'cookie' => 'PHPSESSID=lfumjuqombtt5gsitu495cnt04',
+  'x-real-ip' => '121.238.200.73',
+  'x-forwarded-for' => '121.238.200.73',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Sumao->jiedan[ /www/web/erp/public_html/application/home/controller/Sumao.php ]
+[ info ] [ VIEW ] /www/web/erp/public_html/public/../application/home/view/sumao/jiedan.html [ array (
+  0 => 'uname',
+  1 => 'nav',
+  2 => 'controller',
+  3 => 'action',
+) ]
+[ info ] [ LOG ] INIT File

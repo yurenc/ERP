@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>以马内利(国际)集团ERP管理后台</title>
+    <link rel="stylesheet" type="text/css" href="/static/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="/static/easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <script type="text/javascript" src="/static/easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/easyui/jquery.easyui.min.js"></script>
+</head>
+<body class="easyui-layout">
+<div data-options="region:'north',border:false" style="height:60px;background:#1a2732;padding:10px">
+    <span style="font-size:30px;font-weight:bold;line-height:40px;color:#fff;">生产ERP管理后台</span>
+    <a href="{:url('login/out')}" title="退出登录" style="float:right;margin-right:20px;font-size:16px;font-weight:bold;color:#fff;line-height:40px;">退出登录</a>
+</div>
+
+<div data-options="region:'west',split:true,title:'功能导航'" style="width:150px;">
+     <div class="easyui-accordion" data-options="fit:true,border:false">
+        <!--<div title="销售管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('门店开单','{:url(\'sales/index\')}')">门店开单</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('修改订单','{:url(\'sales/index\')}')">修改订单</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('审核订单','{:url(\'sales/index\')}')">审核订单</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('订单发货','{:url(\'sales/index\')}')">订单发货</a>
+        </div> -->
+        <div title="床垫生产管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('床垫销售接单','{:url(\'shengchan/jiedan_asdf\')}')">床垫销售接单</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('床垫订单管理','{:url(\'shengchan/scorder_asdf\')}')">床垫订单管理</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('床垫生产管理','{:url(\'shengchan/production_asdf\')}')">床垫生产管理</a>
+        </div>
+        <div title="沙发生产管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('沙发销售接单','{:url(\'shengchan/sfjiedan_asdf\')}')">沙发销售接单</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('沙发订单管理','{:url(\'shengchan/sfscorder_asdf\')}')">沙发订单管理</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('沙发生产管理','{:url(\'shengchan/sfproduction_asdf\')}')">沙发生产管理</a>
+        </div>
+        <div title="采购管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('添加采购','{:url(\'caigou/addcgorder_asdf\')}')">添加采购</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('采购订单','{:url(\'caigou/cgorder_asdf\')}')">采购订单</a>
+        </div>
+        <!--    <div title="物流管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('发货单填写','{:url(\'sales/index\')}')">发货单填写</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('物流跟踪','{:url(\'sales/index\')}')">物流跟踪</a>
+        </div> -->
+
+        <div title="苏州仓库管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('苏州仓入库','{:url(\'cangku/shafark_asdf\')}')">入库记录</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('苏州仓出库','{:url(\'cangku/shafack_asdf\')}')">出库记录</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('苏州仓库','{:url(\'cangku/shafa_asdf\')}')">仓库</a>
+        </div>
+
+        <div title="南通仓库管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('南通仓入库','{:url(\'cangku/nshafark_asdf\')}')">入库记录</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('南通仓出库','{:url(\'cangku/nshafack_asdf\')}')">出库记录</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('南通仓仓库','{:url(\'cangku/nshafa_asdf\')}')">仓库</a>
+        </div>
+<!--         <div title="床垫仓库管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('床垫入库','{:url(\'cangku/chuangdianrk\')}')">床垫入库记录</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('床垫出库','{:url(\'cangku/chuangdianck\')}')">床垫出库记录</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('床垫仓库','{:url(\'cangku/chuangdian\')}')">床垫仓库</a>
+        </div>
+        <div title="沙发仓库管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('沙发入库','{:url(\'cangku/shafark\')}')">沙发入库记录</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('沙发出库','{:url(\'cangku/shafack\')}')">沙发出库记录</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('沙发仓库','{:url(\'cangku/shafa\')}')">沙发仓库</a>
+        </div> -->
+        <!-- <div title="财务管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('应收账目','{:url(\'caiwu/yingshou\')}')">应收账目</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('应付账目','{:url(\'caiwu/yingfu\')}')">应付账目</a>
+        </div> -->
+        <div title="会员管理">
+            <a href="#" class="dh_slid_a" onclick="addTab('管理员','{:url(\'user/roles\')}')">管理员</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('客户管理','{:url(\'user/kehu\')}')">客户管理</a>
+            <a href="#" class="dh_slid_a" onclick="addTab('供应商管理','{:url(\'user/supplier\')}')">供应商管理</a>
+        </div>
+    </div>
+</div>
+<div data-options="region:'center'">
+    <div id="tt" class="easyui-tabs" data-options="fit:true,border:false">
+        <div title="首页">
+            <p style="font-size:30px;font-weight:bold;font-family:'微软雅黑';padding-left:2%;">快捷导航</p>
+            <div class="boxcont clear">
+                <a href="#" title="" style="background-color:#57889c;" onclick="addTab('订单管理','{:url(\'shengchan/scorder_asdf\')}')">订单管理</a>
+                <a href="#" title="" style="background-color:#d1b993;">销售开单</a>
+                <a href="#" title="" style="background-color:#1a2732;">销售开单</a>
+                <a href="#" title="" style="background-color:#26c281;">销售开单</a>
+            </div>
+            <div class="boxcont clear">
+                <a href="#" title="" style="background-color:#26c281;">销售开单</a>
+                <a href="#" title="" style="background-color:#1a2732;">销售开单</a>
+                <a href="#" title="" style="background-color:#d1b993;">销售开单</a>
+                <a href="#" title="" style="background-color:#57889c;">销售开单</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addTab(title, url){
+        if ($('#tt').tabs('exists', title)){
+            $('#tt').tabs('select', title);
+        } else {
+            var content = '<iframe scrolling="auto" frameborder="0"  src="'+url+'" style="width:100%;height:100%;"></iframe>';
+            $('#tt').tabs('add',{
+                title:title,
+                content:content,
+                closable:true
+            });
+        }
+    }
+</script>
+</body>
+</html>
